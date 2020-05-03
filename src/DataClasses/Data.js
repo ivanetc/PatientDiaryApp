@@ -38,6 +38,14 @@ const Data = {
 
     setCare(userId, careId) {
         this.users[userId].careId = careId
+    },
+
+    getRecommendations(careId){
+        return this.careList[careId].recommendations
+    },
+
+    getDailyPlan(careId){
+        return this.careList[careId].dailyPlan
     }
 };
 
