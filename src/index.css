@@ -40,3 +40,23 @@ code {
   padding-left: 5px;
   color: green;
 }
+
+/*FreeForm component css */
+.onefreeform{
+  background-color: aliceblue;
+  padding: 10px;
+  font-family: Roboto sans-serif;
+  width: max-content;
+  height: 100%;
+}
+.MuiFormLabel-root {
+  font-size: small!important;
+}
+
+.MuiInput-underline:after {
+  border-bottom: 2px solid #FF5830!important;
+}
+
+.MuiFormLabel-root.Mui-focused{
+  color: #FF5830!important;
+}
