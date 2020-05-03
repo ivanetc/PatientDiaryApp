@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* HEADER COMPONENT CSS */
+.App-header {
+  width: 100%;
+  height: 40px;
+  background-color: greenyellow;
+  color: black;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.App-name {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.App-navi {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.App-navi-item {
+  padding-right: 5px;
+  padding-left: 5px;
+  color: green;
+}
+
+/*FreeForm component css */
+.onefreeform{
+  background-color: aliceblue;
+  padding: 10px;
+  font-family: Roboto sans-serif;
+  width: max-content;
+  height: 100%;
+}
+.MuiFormLabel-root {
+  font-size: small!important;
+}
+
+.MuiInput-underline:after {
+  border-bottom: 2px solid #FF5830!important;
+}
+
+.MuiFormLabel-root.Mui-focused{
+  color: #FF5830!important;
+}
+
+/*СТРАНИЦА ПРОФИЛЯ*/
+
+.all_profile_content {
+  /*display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  border: 1px solid gray;
+  margin: 50px;
+}
+
+.profile_header {
+  font-size: large;
+  text-transform: uppercase;
+  margin: 10px 0;
+  text-align: -webkit-center;
+}
+
+.profile_header_line{}
+.profile_contents{}
+.profile_local_content{}
+.profile_local_name{}
+.profile_local_line{}
+/*.MuiInput-underline:before{
+  content: none!important;
+}*/
+.MuiInput-underline.Mui-disabled:before{
+  border-bottom: 1px solid darkgray!important;
+}
+.MuiInputBase-root.Mui-disabled{
+  color: black!important;
+}
+
+.MuiFormControl-root {
+  padding: 1%!important;
+  /*padding-right: 10%!important;*/
+}

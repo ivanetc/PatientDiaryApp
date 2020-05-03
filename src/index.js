@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 
 import * as ReactRouterDOM from "react-router-dom";
-import MainPageComponent from "./AppComponents/MainPageComponent";
+import ProfilPageComponent from "./AppComponents/ProfilPageComponent";
 import NotFoundComponent from "./AppComponents/NotFoundComponent";
 import FillingSurveyComponent from "./AppComponents/FillingSurveyComponent";
 import Data from "./DataClasses/Data.js";
@@ -17,7 +17,7 @@ const Switch = ReactRouterDOM.Switch;
 ReactDOM.render(
     <Router>
         <Switch>
-            <Route exact path="/" component={MainPageComponent} />
+            <Route exact path="/" component={ProfilPageComponent} />
             <Route path="/fill_survey" component={FillingSurveyComponent} />
             <Route component={NotFoundComponent} />
         </Switch>
