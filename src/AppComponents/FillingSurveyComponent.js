@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./HeaderComponent";
 import Survey from "./Survey/SurveyComponent";
-import FreeForm from "./Survey/FreeForm";
 
 function FillingSurveyComponent() {
 
@@ -21,6 +20,10 @@ function FillingSurveyComponent() {
       label: 'Вопрос 3',
       answers: ['ответ 1', 'ответ 2', 'ответ 3'],
     },
+    {
+      type: 'textarea',
+      label: 'Вопрос 4',
+    }
 
   ];
   return (
@@ -28,7 +31,6 @@ function FillingSurveyComponent() {
         <Header/>
         <h2>Заполнение опроса</h2>
         <p>Вставить сюдым опрос</p>
-        <FreeForm label='temp' name='temp' />
         <Survey questions={questions} />
       </div>
     );

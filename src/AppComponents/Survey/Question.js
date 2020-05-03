@@ -1,7 +1,7 @@
 import React from "react";
 import RadioQuestion from "./RadioQuestion";
 import CheckboxQuestion from "./CheckboxQuestion";
-import FreeForm from "./FreeForm";
+import FreeFormQuestion from "./FreeFormQuestion";
 import SliderQuestion from "./SliderQuestion";
 
 const Question = props => {
@@ -16,7 +16,7 @@ const Question = props => {
       );
     case 'textarea':
       return (
-        <FreeForm />
+        <FreeFormQuestion label={props.question.label} name='temp'/>
       );
     case 'slider':
       return (

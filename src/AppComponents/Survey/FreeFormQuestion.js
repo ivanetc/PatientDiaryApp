@@ -5,7 +5,7 @@ import TextField from '@material-ui/core/TextField';
 
 
 
-const FreeForm = ({label, name}) => {
+const FreeFormQuestion = ({label, name}) => {
 
     return (
         <div className="onefreeform">
@@ -18,4 +18,4 @@ const FreeForm = ({label, name}) => {
         </div>);
 }
 
-export default FreeForm;
+export default FreeFormQuestion;
