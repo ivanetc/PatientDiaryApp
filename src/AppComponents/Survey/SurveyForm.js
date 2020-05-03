@@ -6,7 +6,9 @@ class SurveyForm extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      value: '',
+    };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -17,16 +19,18 @@ class SurveyForm extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
+    alert('ЖОПА' + this.state.value);
     event.preventDefault();
   }
 
   render() {
-    const questions = Object.keys(this.props.questions).map(key => <Question question={this.props.questions[key]}/>);
+    const questions = Object.keys(this.props.questions).map(
+      key => <Question handler={this.handleChange()} question={this.props.questions[key]}/>
+      );
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         {questions}
-        <Button type={'sumbit'}>
+        <Button type={'submit'}>
           Отправить
         </Button>
       </form>

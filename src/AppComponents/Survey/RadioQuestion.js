@@ -8,7 +8,10 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 const RadioQuestion = props => {
   const options = Object.keys(props.answers).map(
     key =>
-      <FormControlLabel value={props.answers[key].text} control={<Radio/>} label={props.answers[key].text}/>
+      <FormControlLabel
+        value={props.answers[key].text}
+        control={<Radio onChange={props.handler}/>}
+        label={props.answers[key].text}/>
     );
 
   return (
