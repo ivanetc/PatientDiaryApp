@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,21 +14,32 @@ code {
     monospace;
 }
 
+
 /* HEADER COMPONENT CSS */
 .App-header {
   width: 100%;
-  height: 40px;
-  background-color: greenyellow;
+  height: 70px;
+  background-color: #009662;
   color: black;
   margin-top: 0;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
+
+  font-family: Roboto, serif;
+}
+
+.App-header img{
+  max-height: 70px;
+  margin-left: 5px;
 }
 
 .App-name {
+  font-size: 14pt;
   margin-left: 15px;
   margin-right: 15px;
+  text-transform: uppercase;
+  color: white;
 }
 
 .App-navi {
@@ -36,7 +49,6 @@ code {
 }
 
 .App-navi-item {
-  padding-right: 5px;
-  padding-left: 5px;
-  color: green;
+  text-decoration: none;
+  color: white;
 }
