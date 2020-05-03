@@ -1,20 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 
-const Select = ({ answers }) => {
-  const options = answers.map(ans => <option key={ans.toString()} value={ans}>{ans}</option>);
+const Select = props => {
+  const options = props.answers.map(ans => <option key={ans.toString()} value={ans}>{ans}</option>);
 
   return (
-    <select>
-      {options}
-    </select>
+    <div>
+      <label htmlFor={'id_select'}>{props.question}</label>
+      <select id={'id_select'}>
+        {options}
+      </select>
+    </div>
   );
 }
 
-const options = ['yoooo', 'boooo', 'kiya'];
-
-ReactDOM.render(
-  <Select answers={options}/>,
-  document.getElementById('root')
-);
+export default Select;
