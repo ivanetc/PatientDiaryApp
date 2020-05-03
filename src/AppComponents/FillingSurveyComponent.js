@@ -8,7 +8,7 @@ function FillingSurveyComponent() {
             <Header/>
             <h2>Заполнение опроса</h2>
             <p>Вставить сюдым опрос</p>
-            <FreeForm label='temp' name='temp' />
+            <FreeForm label='Введите свою температуру' name='Введите свою температуру' />
         </div>;
 
 
