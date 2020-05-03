@@ -7,17 +7,17 @@ function FillingSurveyComponent() {
 
   const questions = [
     {
-      type: 'select',
+      type: 'radio',
       label: 'Вопрос 1',
       answers: ['ответ 1', 'ответ 2', 'ответ 3'],
     },
     {
-      type: 'select',
+      type: 'slider',
       label: 'Вопрос 2',
-      answers: ['ответ 1', 'ответ 2', 'ответ 3'],
+      answers: [0, 2, 4, 6, 8, 10],
     },
     {
-      type: 'select',
+      type: 'checkbox',
       label: 'Вопрос 3',
       answers: ['ответ 1', 'ответ 2', 'ответ 3'],
     },

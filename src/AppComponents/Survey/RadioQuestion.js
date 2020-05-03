@@ -5,7 +5,7 @@ import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 
-const Select = props => {
+const RadioQuestion = props => {
   const options = props.answers.map(ans => <FormControlLabel value={ans} control={<Radio />} label={ans}/>);
 
   return (
@@ -18,4 +18,4 @@ const Select = props => {
   );
 };
 
-export default Select;
+export default RadioQuestion;
