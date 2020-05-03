@@ -3,11 +3,11 @@ import '../index.scss'
 import {Link} from "react-router-dom";
 import logo from "../Resources/Images/logo.png"
 import Button from "@material-ui/core/Button";
+import Data from "../DataClasses/Data.js";
 
 
 function Header() {
-    let firstName = "Александр";
-    let secondName = "Иванец";
+    let user = Data.Data.getUserProfile(1);
     return (
         <header className="App-header">
             <img src={logo} alt="Логотип"/>
@@ -21,7 +21,7 @@ function Header() {
                 <Link className="App-navi-item" to='/fill_survey'>Справка</Link>
             </div>
             <div className="App-header-right-part">
-                <a> Добрый день, {firstName} {secondName} </a>
+                <a> Добрый день, {user.firstName} {user.lastName} </a>
             </div>
             <div className="App-header-exit-button">
                 <Button size="small" variant="contained" color="secondary">

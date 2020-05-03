@@ -6,6 +6,8 @@ import * as ReactRouterDOM from "react-router-dom";
 import MainPageComponent from "./AppComponents/MainPageComponent";
 import NotFoundComponent from "./AppComponents/NotFoundComponent";
 import FillingSurveyComponent from "./AppComponents/FillingSurveyComponent";
+import Data from "./DataClasses/Data.js";
+Data.Data.init();
 
 const Router = ReactRouterDOM.BrowserRouter;
 const Route = ReactRouterDOM.Route;
