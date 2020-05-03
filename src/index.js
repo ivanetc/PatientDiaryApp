@@ -6,11 +6,13 @@ import * as ReactRouterDOM from "react-router-dom";
 import ProfilPageComponent from "./AppComponents/ProfilPageComponent";
 import NotFoundComponent from "./AppComponents/NotFoundComponent";
 import FillingSurveyComponent from "./AppComponents/FillingSurveyComponent";
+import Data from "./DataClasses/Data";
+
+Data.init();
 
 const Router = ReactRouterDOM.BrowserRouter;
 const Route = ReactRouterDOM.Route;
 const Switch = ReactRouterDOM.Switch;
-
 
 ReactDOM.render(
     <Router>
