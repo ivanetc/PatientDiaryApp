@@ -1,16 +1,21 @@
-const fs = require("fs");
 const Survey = require("./survey.js").Survey;
 
 const Data = {
 
-    init(){
-        // сожрать все json файлы из data
+    init() {
         this.survey = Survey;
-        console.log(this.survey["0"])
+        this.users = {"0": {"surveyResults": []}}
     },
 
-    getSurvey(id){
+    getSurvey(id) {
         return this.survey[id]
+    },
+
+    addSurveyResult(userId, surveyId, data) {
+        this.user[userId].surveyResults.append({
+            "surveyId": surveyId,
+            "surveyResult": Survey[surveyId].aggregate(data)
+        });
     }
 };
 
