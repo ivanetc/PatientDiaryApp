@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./HeaderComponent";
+import FreeForm from "./Survey/FreeForm";
 
 function FillingSurveyComponent() {
     let html =
@@ -7,7 +8,9 @@ function FillingSurveyComponent() {
             <Header/>
             <h2>Заполнение опроса</h2>
             <p>Вставить сюдым опрос</p>
+            <FreeForm label='temp' name='temp' />
         </div>;
+
 
     return html;
 }
