@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Data from './DataClasses/Data.js'
 
 function App() {
+  Data.init();
   return (
     <div className="App">
       <header className="App-header">
