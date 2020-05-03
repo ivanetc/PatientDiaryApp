@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import Header from "./AppComponents/HeaderComponent";
+
 import * as ReactRouterDOM from "react-router-dom";
 import MainPageComponent from "./AppComponents/MainPageComponent";
 import NotFoundComponent from "./AppComponents/NotFoundComponent";
