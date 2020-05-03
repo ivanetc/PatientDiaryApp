@@ -1,5 +1,6 @@
 const Survey = require("./survey.js").Survey;
 const Users = require("./users.js").Users;
+const CareList = require("./careList.js").CareList;
 
 const Data = {
 
@@ -9,8 +10,8 @@ const Data = {
         this.careList = CareList;
     },
 
-    getSurvey(id) {
-        return this.survey[id]
+    getSurvey(surveyId) {
+        return this.survey[surveyId]
     },
 
     addSurveyResult(userId, surveyId, data) {
@@ -24,6 +25,19 @@ const Data = {
         let user = this.users[userId];
         user.care = this.careList[user.careId].name;
         return user
+    },
+
+    getCareList() {
+        let shortCareList = {};
+        for (let careId in this.careList) {
+            shortCareList[careId].name = this.careList[careId].name;
+            shortCareList[careId].description = this.careList[careId].description;
+        }
+        return shortCareList
+    },
+
+    setCare(userId, careId) {
+        this.users[userId].careId = careId
     }
 };
 
