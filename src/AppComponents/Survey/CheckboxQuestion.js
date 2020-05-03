@@ -6,7 +6,9 @@ import FormGroup from "@material-ui/core/FormGroup";
 import Checkbox from "@material-ui/core/Checkbox";
 
 const CheckboxQuestion = props => {
-  const options = props.answers.map(ans => <FormControlLabel control={<Checkbox/>} label={ans}/>);
+  const options = Object.keys(props.answers).map(
+    key => <FormControlLabel control={<Checkbox/>} label={props.answers[key].text}/>
+    );
 
   return (
     <div>

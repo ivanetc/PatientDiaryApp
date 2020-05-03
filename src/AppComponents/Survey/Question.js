@@ -8,22 +8,22 @@ const Question = props => {
   switch (props.question.type) {
     case 'radio':
       return (
-        <RadioQuestion question={props.question.label} answers={props.question.answers}/>
+        <RadioQuestion question={props.question.text} answers={props.question.answers}/>
       );
     case 'checkbox':
       return (
-        <CheckboxQuestion question={props.question.label} answers={props.question.answers}/>
+        <CheckboxQuestion question={props.question.text} answers={props.question.answers}/>
       );
     case 'textarea':
       return (
-        <FreeFormQuestion label={props.question.label} name='temp'/>
+        <FreeFormQuestion label={props.question.text} name='temp'/>
       );
     case 'slider':
       return (
-        <SliderQuestion question={props.question.label} />
+        <SliderQuestion question={props.question.text} answers={props.question.answers}/>
       );
     default:
-      return <div>yoooo</div>;
+      return <div>Invalid type of question</div>;
   }
 }
 
