@@ -72,3 +72,12 @@ code {
 .MuiFormLabel-root.Mui-focused{
   color: #FF5830!important;
 }
+
+/*SurveyForm component css*/
+.MuiButton-root.MuiButtonBase-root {
+  background-color: #FF5830;
+}
+
+.MuiButton-root.MuiButtonBase-root:hover {
+  background-color: rgba(255, 88, 48, 0.87);
+}
