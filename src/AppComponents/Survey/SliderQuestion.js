@@ -1,19 +1,22 @@
 import React from "react";
 import Slider from "@material-ui/core/Slider";
-import Typography from "@material-ui/core/Typography";
+import FormLabel from "@material-ui/core/FormLabel";
+import FormControl from "@material-ui/core/FormControl";
 
 const SliderQuestion = props => {
   // const marks = '';
 
   return (
     <div>
-      <Typography>
-        {props.question}
-      </Typography>
-      <Slider
-        defaultValue={10}
-        // marks={marks}
-      />
+      <FormControl>
+        <FormLabel>
+          {props.question}
+        </FormLabel>
+        <Slider
+          defaultValue={10}
+          // marks={marks}
+        />
+      </FormControl>
     </div>
   );
 }

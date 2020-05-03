@@ -9,12 +9,14 @@ const CheckboxQuestion = props => {
   const options = props.answers.map(ans => <FormControlLabel control={<Checkbox/>} label={ans}/>);
 
   return (
-    <FormControl>
-      <FormLabel>{props.question}</FormLabel>
-      <FormGroup name='checkbox'>
-        {options}
-      </FormGroup>
-    </FormControl>
+    <div>
+      <FormControl>
+        <FormLabel>{props.question}</FormLabel>
+        <FormGroup name='checkbox'>
+          {options}
+        </FormGroup>
+      </FormControl>
+    </div>
   );
 }
 
