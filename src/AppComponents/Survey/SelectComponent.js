@@ -11,7 +11,7 @@ const Select = props => {
   return (
     <FormControl>
       <FormLabel>{props.question}</FormLabel>
-      <RadioGroup name={'radio'}>
+      <RadioGroup name='radio'>
         {options}
       </RadioGroup>
     </FormControl>
