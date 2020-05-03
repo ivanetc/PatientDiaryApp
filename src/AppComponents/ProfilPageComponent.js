@@ -1,8 +1,9 @@
 import React from "react";
 import Header from "./HeaderComponent";
-import Data from "./../DataClasses/DataClass";
+/*import Data from "./../DataClasses/DataClass";*/
 import TextField from '@material-ui/core/TextField';
 import Divider from '@material-ui/core/Divider';
+import '../index.scss'
 
 //Data.init();
 
