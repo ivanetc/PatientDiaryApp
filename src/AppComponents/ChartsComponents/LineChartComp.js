@@ -9,7 +9,7 @@ const LineChartComp = ({fish}) => {
             loader={<div>Loading Chart</div>}
             data={fish}
             options={{
-                width: 1200,
+                //width: 1200,
                 title: '',
                 titleTextStyle: {
                     color: 'grey',
