@@ -177,10 +177,36 @@ $fontFamily: "Roboto Medium";
 
 //RECOMMENDATION COMPONENT
 .ComponentBody{
-  margin-left: 50px;
+  margin-left: 5%;
+}
+
+.RecommendationContainer{
+  max-width: 90%;
+}
+
+.GreenContainer{
+  background-color: lightgreen;
+  color: black;
+  & a {
+    color: black;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+}
+
+.RedContainer{
+  background-color: $secondaryColor;
+  color: white;
+  & a {
+    color: white;
+    &:hover {
+      color: black;
+    }
+  }
 }
 .RecommendationItem{
-  background-color: lightgreen;
   border: 1px gray;
   border-radius: 6px;
   min-height: 100px;
@@ -199,5 +225,7 @@ $fontFamily: "Roboto Medium";
     font-size: 14px;
     font-family: $fontFamily;
     font-style: normal;
+    text-decoration: none;
+    margin-bottom: 2px;
   }
 }

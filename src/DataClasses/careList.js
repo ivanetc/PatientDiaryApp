@@ -1,7 +1,7 @@
 const CareList = {
     "0": {
-        "name": "Иван",
-        "description": "Иванов",
+        "name": "Уход за больным после операции",
+        "description": "Комплекс рекомендаций по уходу за больным после операции",
         "recommendations": {
             "0": {
                 "name": "asas",
