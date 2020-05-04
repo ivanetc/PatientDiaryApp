@@ -19,7 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb2b9e80-f61c-4312-80ad-deae8f07f63d" name="Default Changelist" comment="">
+    <list default="true" id="eb2b9e80-f61c-4312-80ad-deae8f07f63d" name="Default Changelist" comment="xnj">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +36,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="IvanetsAS &lt;ivanetc.aleksandr@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="ivanetc" />
@@ -62,7 +68,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.editor.code.editing" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -197,7 +203,35 @@
       <option name="project" value="LOCAL" />
       <updated>1588607824123</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="дублирование header-a">
+      <created>1588609161923</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588609161923</updated>
+    </task>
+    <task id="LOCAL-00012" summary="результаты опроса">
+      <created>1588618012620</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1588618012620</updated>
+    </task>
+    <task id="LOCAL-00013" summary="результаты опроса">
+      <created>1588618960007</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588618960007</updated>
+    </task>
+    <task id="LOCAL-00014" summary="xnj">
+      <created>1588621797143</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1588621797143</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +261,11 @@
     <MESSAGE value="План дня. Опрос в новой вкладке. Роутинг с параметрами" />
     <MESSAGE value="Зашаманил фон и опросы. Какая-то хренотень" />
     <MESSAGE value="фон цепляется к топу" />
-    <option name="LAST_COMMIT_MESSAGE" value="фон цепляется к топу" />
+    <MESSAGE value="дублирование header-a" />
+    <MESSAGE value="результаты опроса" />
+    <MESSAGE value="исправил ошибку в выборе диагноза" />
+    <MESSAGE value="xnj" />
+    <option name="LAST_COMMIT_MESSAGE" value="xnj" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1588577306792">
@@ -242,6 +280,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="466" y="107" width="424" height="587" key="#com.intellij.ide.macro.MacrosDialog/0.30.1366.738@0.30.1366.738" timestamp="1588524151852" />
+    <state x="416" y="148" width="524" height="504" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588621834774">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="416" y="148" width="524" height="504" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1366.738@0.30.1366.738" timestamp="1588621834774" />
     <state x="392" y="54" key="#npm_start" timestamp="1588531223400">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -250,10 +292,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="392" y="54" key="#start/0.0.1366.738@0.0.1366.738" timestamp="1588531138314" />
-    <state x="292" y="30" width="771" height="738" key="CommitChangelistDialog2" timestamp="1588607823990">
+    <state x="292" y="30" width="771" height="738" key="CommitChangelistDialog2" timestamp="1588621797036">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="292" y="30" width="771" height="738" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1588607823990" />
+    <state x="292" y="30" width="771" height="738" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1588621797036" />
     <state x="117" y="244" width="747" height="457" key="EditFileWatcherDialog" timestamp="1588522806856">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -291,32 +333,32 @@
     </state>
     <state x="129" y="55" key="MergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1588541052321" />
     <state x="129" y="85" width="1092" height="623" key="MergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1588607696305" />
-    <state x="571" y="183" width="580" height="585" key="MultipleFileMergeDialog" timestamp="1588609038654">
+    <state x="571" y="183" width="580" height="585" key="MultipleFileMergeDialog" timestamp="1588618986714">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="571" y="236" width="389" height="265" key="MultipleFileMergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1588541052328" />
-    <state x="571" y="183" width="580" height="585" key="MultipleFileMergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1588609038654" />
+    <state x="571" y="183" width="580" height="585" key="MultipleFileMergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1588618986714" />
     <state x="184" y="13" key="SettingsEditor" timestamp="1588576430948">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="13" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1588576430948" />
-    <state x="275" y="131" width="800" height="539" key="Vcs.Push.Dialog.v2" timestamp="1588607829834">
+    <state x="275" y="131" width="800" height="539" key="Vcs.Push.Dialog.v2" timestamp="1588618992704">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1588541004892" />
-    <state x="275" y="131" width="800" height="539" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1588607829834" />
-    <state x="463" y="31" width="465" height="737" key="git4idea.branch.GitSmartOperationDialog" timestamp="1588609036522">
+    <state x="275" y="131" width="800" height="539" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1588618992704" />
+    <state x="463" y="31" width="465" height="737" key="git4idea.branch.GitSmartOperationDialog" timestamp="1588618984714">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="463" y="81" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.738@0.0.1366.738" timestamp="1588531860973" />
-    <state x="463" y="31" width="465" height="737" key="git4idea.branch.GitSmartOperationDialog/0.30.1366.738@0.30.1366.738" timestamp="1588609036522" />
-    <state x="402" y="175" width="562" height="451" key="git4idea.merge.GitPullDialog" timestamp="1588609018422">
+    <state x="463" y="31" width="465" height="737" key="git4idea.branch.GitSmartOperationDialog/0.30.1366.738@0.30.1366.738" timestamp="1588618984714" />
+    <state x="402" y="175" width="562" height="451" key="git4idea.merge.GitPullDialog" timestamp="1588621814989">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="402" y="175" width="562" height="451" key="git4idea.merge.GitPullDialog/0.30.1366.738@0.30.1366.738" timestamp="1588609018422" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1588526656929">
+    <state x="402" y="175" width="562" height="451" key="git4idea.merge.GitPullDialog/0.30.1366.738@0.30.1366.738" timestamp="1588621814989" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1588617558278">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1588526656929" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1588617558278" />
   </component>
 </project>
