@@ -20,12 +20,21 @@ function RecommendationsComponent() {
                         header={article.name}
                         text={article.description}
                         sourceLink={article.link}
-                        imageLink={article.imageLink}/>);
+                        imageLink={article.imageLink}/>
+    );
+
+    let contactComponents = contacts.map(
+        contact => <div>
+            <h3>{contact.name}</h3>
+            <span>{contact.phone}</span>
+        </div>
+    );
+
+
 
     recommendations.pop();
     contacts.pop();
     usefulLinks.pop();
-    articles.pop();
 
 
 
@@ -54,8 +63,7 @@ function RecommendationsComponent() {
                     <Grid item xs={3}>
                         <div className="RecommendationItem RedContainer">
                             <h2>Важные телефоны</h2>
-                            <span>Горячая линия</span>
-                            <span>8-800-555-35-35</span>
+                            {contactComponents}
                         </div>
                     </Grid>
                     {articleComponents}
