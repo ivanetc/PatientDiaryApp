@@ -18,7 +18,8 @@ const Data = {
         this.user[userId].surveyResults.push({
             "surveyId": surveyId,
             "surveyScore": this.survey[surveyId].aggregate(data),
-            "surveyResult": data
+            "surveyResult": data,
+            "date": "Здесь дата, но мне лень"
         });
         return this.survey[surveyId].aggregate(data)
     },
@@ -49,7 +50,7 @@ const Data = {
 
     getDailyPlan(userId, careId) {
         let plan = this.careList[careId].dailyPlan;
-        for (let pointId in plan){
+        for (let pointId in plan) {
             plan[pointId].checked = this.users[userId].planImplementation.indexOf(pointId) !== -1;
         }
         return plan
@@ -59,14 +60,42 @@ const Data = {
         this.users[userId].planImplementation.push(pointId)
     },
 
-    getSurveyStatistic(userId, surveyId){
-        let surveyResults = [];
-        for (let result in this.users[userId].surveyResults){
+    getSurveyStatistic(userId, surveyId) {
+        let surveyResults = [
+            ["дни", this.survey[surveyId].name],
+            ["25.04", 80],
+            ["26.04", 75],
+            ["27.04", 60],
+            ["28.04", 65],
+            ["29.04", 45],
+            ["30.04", 45],
+            ["01.05", 55],
+            ["02.05", 60],
+            ["03.05", 70],
+            ["04.05", 85],
+        ];
+        for (let result in this.users[userId].surveyResults) {
             if (result.surveyId === surveyId) {
-                surveyResults.push(result)
+                surveyResults.push(["05.05", result.surveyScore])
             }
         }
-        return [0.1, 0.2, 0.3, 0]
+        return surveyResults
+    },
+
+    getCalendarStatistic() {
+        return [
+            [{type: 'date', id: 'Date'}, {type: 'number', id: 'Won/Loss'}],
+            [new Date(2020, 4, 25), 1],
+            [new Date(2020, 4, 26), 1],
+            [new Date(2020, 4, 27), 1],
+            [new Date(2020, 4, 28), 0],
+            [new Date(2020, 4, 29), 1],
+            [new Date(2020, 4, 30), 2],
+            [new Date(2020, 5, 1), 2],
+            [new Date(2020, 5, 2), 2],
+            [new Date(2020, 5, 3), 2],
+            [new Date(2020, 5, 4), 1],
+        ]
     }
 };
 
