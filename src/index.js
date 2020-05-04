@@ -9,6 +9,7 @@ import FillingSurveyComponent from "./AppComponents/FillingSurveyComponent";
 import Data from "./DataClasses/Data.js";
 import RecommendationsComponent from "./AppComponents/RecommendationsComponent";
 import CalendarComponent from "./AppComponents/СalendarComponent";
+import DailyPlanComponent from "./AppComponents/DailyPlanComponent";
 Data.Data.init();
 
 const Router = ReactRouterDOM.BrowserRouter;
@@ -20,7 +21,8 @@ ReactDOM.render(
     <Router>
         <Switch>
             <Route exact path="/" component={ProfilPageComponent} />
-            <Route path="/fill_survey" component={FillingSurveyComponent} />
+            <Route exact path="/daily_plan" component={DailyPlanComponent} />
+            <Route path="/daily_plan/survey:id" component={FillingSurveyComponent} />
             <Route path="/recommendations" component={RecommendationsComponent} />
             <Route path="/calendar" component={CalendarComponent} />
             <Route component={NotFoundComponent} />

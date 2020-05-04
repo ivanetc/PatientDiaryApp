@@ -17,6 +17,9 @@ body {
   font-family: $fontFamily;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  background-color: #ededed;
 }
 
 //code {
@@ -122,6 +125,10 @@ $secondaryColor2: #FF5830;
 .MuiButton-containedSecondary{
   background-color: $secondaryColor2 !important;
 }
+.MuiButton-containedSizeSmall{
+  padding: 2px 7px !important;
+  font-size: 12px !important;
+}
 
 .App-header-exit-button{
   margin-left: 5px;
@@ -163,6 +170,8 @@ $secondaryColor2: #FF5830;
   text-transform: uppercase;
   margin: 10px 0;
   text-align: -webkit-center;
+  font-weight: normal;
+  color:rgba(0, 0, 0, 0.87)
 }
 
 .profile_header_line{}
@@ -278,7 +287,6 @@ $secondaryColor2: #FF5830;
   border-width: 0.2px;
   border-style: solid;
   border-radius: 6px;
-  min-height: 100px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -309,6 +317,44 @@ $secondaryColor2: #FF5830;
     max-width: 100%;
   }
 }
+
+// ПЛАН НА ДЕНЬ
+.BodyDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.DayItemsContainer{
+  max-width: 80%;
+}
+
+.DayItem{
+  border: 1px solid darkgray;
+  background-color: white;
+  border-radius: 2px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-right: 60px;
+  min-height: 400px;
+}
+
+.DailySurveyItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+  padding: 5px;
+
+  & a{
+    text-transform: uppercase;
+    margin-right: 8px;
+    font-family: $fontFamily;
+    font-weight: normal;
+    font-size: 14px;
+  }
+}
+
 /*КАЛЕНДАРЬ СТАТИСТИКА ГРАФИКИ*/
 .all_charts{
   border: 1px solid darkgray;
