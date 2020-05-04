@@ -19,6 +19,10 @@ function RecommendationsComponent() {
         minHeight: "95%"
     };
 
+    const body = {
+        backgroundColor: "white"
+    };
+
     let articleComponents = articles.map(
         article => <RecommendationArticle
                         header={article.name}
@@ -51,7 +55,7 @@ function RecommendationsComponent() {
     );
 
     return (
-        <div >
+        <div style={body}>
             <Header/>
             <div className="ComponentBody">
                 <h1>{user.care}. Рекомендации.</h1>
