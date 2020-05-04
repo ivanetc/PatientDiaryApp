@@ -10,7 +10,7 @@ const RadioQuestion = props => {
     key =>
       <FormControlLabel
         value={props.answers[key].text}
-        control={<Radio required={true} onChange={props.handler}/>}
+        control={<Radio required={true} value={key} onChange={props.handler}/>}
         label={props.answers[key].text}
       />
     );

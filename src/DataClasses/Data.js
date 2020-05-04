@@ -15,12 +15,14 @@ const Data = {
     },
 
     addSurveyResult(userId, surveyId, data) {
-        this.user[userId].surveyResults.push({
+        this.users[userId].surveyResults.push({
             "surveyId": surveyId,
             "surveyScore": this.survey[surveyId].aggregate(data),
             "surveyResult": data,
             "date": "Здесь дата, но мне лень"
         });
+
+        alert(this.survey[surveyId].aggregate(data));
         return this.survey[surveyId].aggregate(data)
     },
 
