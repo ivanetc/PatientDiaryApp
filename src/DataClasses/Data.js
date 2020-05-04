@@ -30,6 +30,7 @@ const Data = {
     getCareList() {
         let shortCareList = {};
         for (let careId in this.careList) {
+            shortCareList[careId] = {}
             shortCareList[careId].name = this.careList[careId].name;
             shortCareList[careId].description = this.careList[careId].description;
         }

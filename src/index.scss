@@ -199,3 +199,19 @@ $fontFamily: "Roboto Medium";
   /*padding-right: 10%!important;*/
   vertical-align: baseline!important;
 }
+
+.MuiInputLabel-formControl {
+  top: auto!important;
+  left: auto!important;
+}
+.MuiOutlinedInput-root {
+  width: 300px;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+  border-color: $secondaryColor !important;
+}
+
+/* --- Это для профиля, если будем разносить по разным файлам сss то вот эту штуку отдельно в профиль
+  .MuiFormLabel-root.Mui-focused {
+  color: darkgray!important;
+}*/
