@@ -17,10 +17,19 @@ class DailyPlanForm extends React.Component {
   }
 
   render() {
+    this.userProfile = Data.Data.getUserProfile(0);
     const plan = this.props.plan;
+
     const checkboxes = Object.keys(plan).map(
       key => <FormControlLabel
-        control={<Checkbox name={key} onChange={this.handleChange} value={plan[key].text}/>}
+        control={
+          <Checkbox
+              defaultChecked={isImplemented(this.userProfile, plan[key].id)}
+              name={plan[key].id}
+              onChange={this.handleChange}
+              value={plan[key].text}
+          />
+        }
         label={plan[key].text}
       />
     );
@@ -31,6 +40,10 @@ class DailyPlanForm extends React.Component {
       </div>
     );
   }
+}
+
+function isImplemented(userProfile, planId) {
+  return userProfile.planImplementation.indexOf(planId) !== -1;
 }
 
 export default DailyPlanForm;

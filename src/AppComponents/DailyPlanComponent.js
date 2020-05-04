@@ -58,6 +58,7 @@ function parseFullDailyPlan(fullDailyPlan) {
 
     for (let planId in fullDailyPlan) {
         let planItem = fullDailyPlan[planId];
+        planItem.id = planId;
         if (planItem.type === "survey")
             dailySurveys.push(planItem);
         else
