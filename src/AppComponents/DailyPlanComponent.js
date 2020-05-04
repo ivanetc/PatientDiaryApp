@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "./HeaderComponent";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Data from "../DataClasses/Data";
 import DailySurveyItem from "./DailyPlan/DailySurveyItem";
+import DailyPlanForm from "./DailyPlan/DailyPlanForm";
 
 function DailyPlanComponent() {
     const section = {
@@ -11,11 +11,10 @@ function DailyPlanComponent() {
     };
     let userId = 0;
     let user = Data.Data.getUserProfile(userId);
-    let careId = user.careId;
+    // let careId = user.careId;
 
-    let fullDailyPlan = Data.Data.getDailyPlan(userId, careId);
+    let fullDailyPlan = Data.Data.getDailyPlan(userId);
     let {dailyPlan, dailySurveys} = parseFullDailyPlan(fullDailyPlan);
-
     let surveyComponents = dailySurveys.map(survey =>
         <DailySurveyItem
             surveyName={survey.text}
@@ -36,7 +35,7 @@ function DailyPlanComponent() {
                 <Grid style={section} item xs={6}>
                     <Paper className="DayItem">
                         <h2 className="profile_header">План дня</h2>
-
+                        <DailyPlanForm userId={userId} plan={dailyPlan}/>
                     </Paper>
                 </Grid>
                 <Grid style={section} item xs={5}>

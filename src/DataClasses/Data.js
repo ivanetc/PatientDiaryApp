@@ -15,12 +15,14 @@ const Data = {
     },
 
     addSurveyResult(userId, surveyId, data) {
-        this.user[userId].surveyResults.push({
+        this.users[userId].surveyResults.push({
             "surveyId": surveyId,
             "surveyScore": this.survey[surveyId].aggregate(data),
             "surveyResult": data,
             "date": "Здесь дата, но мне лень"
         });
+
+        alert(this.survey[surveyId].aggregate(data));
         return this.survey[surveyId].aggregate(data)
     },
 
@@ -41,9 +43,7 @@ const Data = {
     },
 
     setCare(userId, careId) {
-        console.log('было', this.users[userId].careId);
         this.users[userId].careId = careId;
-        setTimeout(console.log.bind(this, 'стало', this.users[userId].careId), 500);
     },
 
     getRecommendations(userId) {
@@ -98,6 +98,10 @@ const Data = {
             [new Date(2020, 5, 3), 2],
             [new Date(2020, 5, 4), 1],
         ]
+    },
+
+    getSurveyDecoding(surveyId){
+        return this.survey[surveyId].decoding
     }
 };
 

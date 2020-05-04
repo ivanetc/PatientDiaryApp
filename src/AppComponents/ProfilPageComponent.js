@@ -63,7 +63,6 @@ function ProfilPageComponent() {
   let careList = Data.Data.getCareList();
   let html =
     <div>
-      <Header/>
       <Paper className="all_profile_content">
         <div className="profile_header">Профиль</div>
         <ProfilAll
