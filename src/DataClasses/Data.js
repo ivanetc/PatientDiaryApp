@@ -100,6 +100,10 @@ const Data = {
             [new Date(2020, 5, 3), 2],
             [new Date(2020, 5, 4), 1],
         ]
+    },
+
+    getSurveyDecoding(surveyId){
+        return this.survey[surveyId].decoding
     }
 };
 

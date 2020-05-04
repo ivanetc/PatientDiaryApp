@@ -111,7 +111,8 @@ const Survey = {
         },
         aggregate(someData) {
             // Как-то аггрегирует данные
-        }
+        },
+        "decoding": ""
     },
     "1": {
         "name": "Шкала Бартела",
@@ -331,7 +332,8 @@ const Survey = {
                 result = result + weights[answer][someData[answer]]
             }
             return result
-        }
+        },
+        "decoding": ""
     },
 
     "2": {
@@ -340,7 +342,7 @@ const Survey = {
         "questions": {
           "1": {
             "text": "Общее состояние",
-            "type": "slider",
+            "type": "radio",
             "answers": {
               "1": {
                 "text": "Хорошее"
@@ -394,7 +396,7 @@ const Survey = {
           },
           "4": {
             "text": "Подвижность",
-            "type": "slider",
+            "type": "radio",
             "answers": {
               "1": {
                 "text": "Общая, хорошая"
@@ -412,7 +414,7 @@ const Survey = {
           },
           "5": {
             "text": "Контроль за функциями таза",
-            "type": "slider",
+            "type": "radio",
             "answers": {
               "1": {
                 "text": "Недержание отсутствует"
@@ -468,11 +470,13 @@ const Survey = {
         for (let answer in someData) {
           result = result + weights[answer][someData[answer]]
         }
-        if (result < 12) return "Зона высокого риска";
-        if (result > 12 && result < 14) return "Зона умеренного риска";
-        if (result > 14) return "Отсутствие риска";
-      }
+        return result
+      },
+        "decoding": "Если сумма баллов меньше 12 - больной в зоне высокого риска.\n" +
+            "Если сумма баллов между 12 и 14 - больной в зоне умеренногориска\n" +
+            "Если сумма баллов больше 14 - риска нет"
     }
+
 
 };
 
