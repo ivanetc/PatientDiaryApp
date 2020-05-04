@@ -47,10 +47,6 @@ const Data = {
 
     getDailyPlan(careId){
         return this.careList[careId].dailyPlan
-    },
-
-    getHelpPage(careId){
-        return this.careList[careId].help
     }
 };
 
