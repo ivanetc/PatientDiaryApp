@@ -59,7 +59,7 @@ const ProfilAll = ({firstName, lastName, email, careId, careList}) => {
 }
 
 function ProfilPageComponent() {
-  let user = Data.Data.getUserProfile(0);
+  let user = Data.Data.getUserProfile(0);//надопонять откуда берётся юзер айди и как
   let careList = Data.Data.getCareList();
   let html =
     <div>
