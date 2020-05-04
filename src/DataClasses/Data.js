@@ -63,19 +63,36 @@ const Data = {
     },
 
     getSurveyStatistic(userId, surveyId) {
-        let surveyResults = [
-            ["дни", this.survey[surveyId].name],
-            ["25.04", 80],
-            ["26.04", 75],
-            ["27.04", 60],
-            ["28.04", 65],
-            ["29.04", 45],
-            ["30.04", 45],
-            ["01.05", 55],
-            ["02.05", 60],
-            ["03.05", 70],
-            ["04.05", 85],
-        ];
+        let surveyResults = [];
+        if (surveyId === "1") {
+            surveyResults = [
+                ["дни", this.survey[surveyId].name],
+                ["25.04", 70],
+                ["26.04", 75],
+                ["27.04", 70],
+                ["28.04", 70],
+                ["29.04", 70],
+                ["30.04", 65],
+                ["01.05", 75],
+                ["02.05", 80],
+                ["03.05", 75],
+                ["04.05", 70],
+            ]
+        } else {
+            surveyResults = [
+                ["дни", this.survey[surveyId].name],
+                ["25.04", 18],
+                ["26.04", 18],
+                ["27.04", 17],
+                ["28.04", 18],
+                ["29.04", 17],
+                ["30.04", 17],
+                ["01.05", 16],
+                ["02.05", 17],
+                ["03.05", 17],
+                ["04.05", 18],
+            ]
+        }
         for (let result in this.users[userId].surveyResults) {
             if (result.surveyId === surveyId) {
                 surveyResults.push(["05.05", result.surveyScore])
@@ -100,7 +117,7 @@ const Data = {
         ]
     },
 
-    getSurveyDecoding(surveyId){
+    getSurveyDecoding(surveyId) {
         return this.survey[surveyId].decoding
     }
 };
