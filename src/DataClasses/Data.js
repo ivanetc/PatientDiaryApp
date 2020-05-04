@@ -41,11 +41,13 @@ const Data = {
     },
 
     setCare(userId, careId) {
-        this.users[userId].careId = careId
+        console.log('было', this.users[userId].careId);
+        this.users[userId].careId = careId;
+        setTimeout(console.log.bind(this, 'стало', this.users[userId].careId), 500);
     },
 
-    getRecommendations(careId) {
-        return this.careList[careId].recommendations
+    getRecommendations(userId) {
+        return this.careList[this.users[userId].careId].recommendations
     },
 
     getDailyPlan(userId, careId) {
