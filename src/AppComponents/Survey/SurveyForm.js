@@ -17,13 +17,23 @@ class SurveyForm extends React.Component {
 
   handleChange(event) {
     const target = event.target;
-    this.setState(
-      prevState => ({
-        value: {
-          ...prevState.value,
-          [target.name]: target.value,
-        }
-      }));
+    if (target.type === 'checkbox' && !this.state.value[target.name]) {
+      this.setState(
+        prevState => ({
+          value: {
+            ...prevState.value,
+            [target.name]: [target.value],
+          }
+        }));
+    } else {
+      this.setState(
+        prevState => ({
+          value: {
+            ...prevState.value,
+            [target.name]: target.type === 'checkbox' ? [...prevState.value[target.name], target.value] : target.value,
+          }
+        }));
+    }
   }
 
   handleSubmit(event) {
