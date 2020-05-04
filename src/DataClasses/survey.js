@@ -86,7 +86,7 @@ const Survey = {
             },
             "6": {
                 "text": "Принимали ли вы сегодня алкоголь?",
-                "type": "checkbox",
+                "type": "radio",
                 "answers": {
                     "1": {
                         "text": "Да"
@@ -98,7 +98,7 @@ const Survey = {
             },
             "7": {
                 "text": "Принимали ли вы сегодня наркотики?",
-                "type": "checkbox",
+                "type": "radio",
                 "answers": {
                     "1": {
                         "text": "Да"

@@ -96,6 +96,42 @@ const CareList = {
                 "description": "Человек существо социальное. Общение поможет больному держаться.",
                 "link": "https://drive.google.com/open?id=1jkzXqLaBdi5iq2efcANlw3H0_JwGZI0e"
             },
+            "4": {
+                "type": "contact",
+                "name": "Про Паллиатив",
+                "link": "https://pro-palliativ.ru",
+                "phone": ""
+            },
+            "5": {
+                "type": "contact",
+                "name": "Мастерская заботы",
+                "link": "https://www.youtube.com/channel/UCmMFZV1ZybknauJayLOWvQg",
+                "phone": ""
+            },
+            "6": {
+                "type": "contact",
+                "name": "Горячая линия",
+                "link": "",
+                "phone": "8(800)555-35-35"
+            },
+            "7": {
+                "type": "recommendation",
+                "name": "Поддерживайте оптимальную температуру",
+                "description": "Оптимальная температура подарит больному ощущение комфорта",
+                "link": "https://drive.google.com/open?id=1jkzXqLaBdi5iq2efcANlw3H0_JwGZI0e"
+            },
+            "8": {
+                "type": "recommendation",
+                "name": "Включите любимую музыку человека",
+                "description": "Музыка помогает пациенту расслабиться и успокоиться",
+                "link": "https://drive.google.com/open?id=1jkzXqLaBdi5iq2efcANlw3H0_JwGZI0e"
+            },
+            "9": {
+                "type": "recommendation",
+                "name": "Не допускайте образования складок на постельном белье и одежде",
+                "description": "Складки могут вызывать у лежачего пациента пролежни",
+                "link": "https://drive.google.com/open?id=1jkzXqLaBdi5iq2efcANlw3H0_JwGZI0e"
+            },
         },
         "dailyPlan": {
             "0": {

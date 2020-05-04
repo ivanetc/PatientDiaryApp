@@ -10,6 +10,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import {classes} from "istanbul-lib-coverage";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import {keys} from "@material-ui/core/styles/createBreakpoints";
+import Paper from "@material-ui/core/Paper";
 
 const ProfilAll = ({firstName, lastName, email, careId, careList}) => {
     const [nameCare, setCare] = React.useState('');
@@ -57,12 +58,12 @@ const ProfilAll = ({firstName, lastName, email, careId, careList}) => {
 }
 
 function ProfilPageComponent() {
-        let user = Data.Data.getUserProfile(1);
+        let user = Data.Data.getUserProfile(0);
         let careList = Data.Data.getCareList();
         let html =
         <div>
                 <Header/>
-                <div className="all_profile_content">
+                <Paper className="all_profile_content">
                         <div className="profile_header">Профиль</div>
                         <ProfilAll
                             firstName={user.firstName}
@@ -71,7 +72,7 @@ function ProfilPageComponent() {
                             email={user.login}
                             careList={careList}
                         />
-                </div>
+                </Paper>
         </div>;
         return html;
 }

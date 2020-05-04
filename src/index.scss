@@ -28,6 +28,7 @@ $primaryColor: #009662;
 $primaryColorDark: #00925F;
 $primaryColor2: #90FFD8;
 $secondaryColor: #B3371B;
+$secondaryColor2: #FF5830;
 
 
 
@@ -85,21 +86,21 @@ $secondaryColor: #B3371B;
   align-items: center;
 
   &:hover {
-    animation: 0.2s ease-in-out 1 pulse;
+    animation: 0.15s ease-in-out 1 pulse;
 
     @keyframes pulse {
       0% {
           background: $primaryColor;
-          border-bottom: 0px solid $secondaryColor;
+          border-bottom: 0px solid $secondaryColor2;
         }
 
       100% {
         background: $primaryColorDark;
-        border-bottom: 2px solid $secondaryColor;
+        border-bottom: 2px solid $secondaryColor2;
       }
     }
     background: $primaryColorDark;
-    border-bottom: 2px solid $secondaryColor;
+    border-bottom: 2px solid $secondaryColor2;
     cursor: pointer;
     color: white;
   }
@@ -119,7 +120,7 @@ $secondaryColor: #B3371B;
 }
 // for button
 .MuiButton-containedSecondary{
-  background-color: $secondaryColor !important;
+  background-color: $secondaryColor2 !important;
 }
 
 .App-header-exit-button{
@@ -220,10 +221,11 @@ $secondaryColor: #B3371B;
   border-color: $secondaryColor !important;
 }
 
-/* --- Это для профиля, если будем разносить по разным файлам сss то вот эту штуку отдельно в профиль
-  .MuiFormLabel-root.Mui-focused {
-  color: darkgray!important;
-}*/
+.inputlabel-profile.Mui-focused {
+    color: darkgray!important;
+    background-color: white;
+  }
+
 
 //RECOMMENDATION COMPONENT
 .ComponentBody{
@@ -282,6 +284,7 @@ $secondaryColor: #B3371B;
   align-content: center;
   padding: 15px;
   font-family: $fontFamily;
+  min-height: 90%;
 
 
   & h2{
@@ -306,3 +309,19 @@ $secondaryColor: #B3371B;
     max-width: 100%;
   }
 }
+/*КАЛЕНДАРЬ СТАТИСТИКА ГРАФИКИ*/
+.all_charts{
+  border: 1px solid darkgray;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.title_charts{
+  font-size: large;
+  text-transform: uppercase;
+  margin: 10px 0;
+  text-align: -webkit-center;
+}
+
+.calendar_charts_field{}
+.line_charts_field{}

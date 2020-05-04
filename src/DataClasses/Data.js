@@ -15,11 +15,12 @@ const Data = {
     },
 
     addSurveyResult(userId, surveyId, data) {
-        this.user[userId].surveyResults.append({
+        this.user[userId].surveyResults.push({
             "surveyId": surveyId,
-            "surveyScore": Survey[surveyId].aggregate(data),
+            "surveyScore": this.survey[surveyId].aggregate(data),
             "surveyResult": data
         });
+        return this.survey[surveyId].aggregate(data)
     },
 
     getUserProfile(userId) {
@@ -31,7 +32,7 @@ const Data = {
     getCareList() {
         let shortCareList = {};
         for (let careId in this.careList) {
-            shortCareList[careId] = {}
+            shortCareList[careId] = {};
             shortCareList[careId].name = this.careList[careId].name;
             shortCareList[careId].description = this.careList[careId].description;
         }
@@ -55,7 +56,17 @@ const Data = {
     },
 
     checkPoint(userId, pointId) {
-        this.users[userId].planImplementation.append(pointId)
+        this.users[userId].planImplementation.push(pointId)
+    },
+
+    getSurveyStatistic(userId, surveyId){
+        let surveyResults = [];
+        for (let result in this.users[userId].surveyResults){
+            if (result.surveyId === surveyId) {
+                surveyResults.push(result)
+            }
+        }
+        return [0.1, 0.2, 0.3, 0]
     }
 };
 
