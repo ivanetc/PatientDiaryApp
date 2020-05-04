@@ -119,7 +119,21 @@ const Data = {
 
     getSurveyDecoding(surveyId) {
         return this.survey[surveyId].decoding
-    }
+    },
+
+    checkSurvey(userId, surveyId){
+        let result = false;
+        for (let survey in this.users[userId].surveyResults) {
+            if (survey.surveyId === surveyId){
+                result = true
+            }
+        }
+        return result
+    },
+
+    uncheckPoint(userId, pointId) {
+        this.users[userId].planImplementation.splice(this.users[userId].planImplementation.indexOf(pointId))
+    },
 };
 
 exports.Data = Data;
