@@ -184,8 +184,23 @@ $fontFamily: "Roboto Medium";
   max-width: 90%;
 }
 
+
+.GrayContainer{
+  background-color: #f2f2f2;
+  border-color: lightgray;
+  color: black;
+  & a {
+    color: black;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+}
+
 .GreenContainer{
   background-color: lightgreen;
+  border-color: $primaryColor;
   color: black;
   & a {
     color: black;
@@ -198,6 +213,7 @@ $fontFamily: "Roboto Medium";
 
 .RedContainer{
   background-color: $secondaryColor;
+  border-color: darkred;
   color: white;
   & a {
     color: white;
@@ -207,7 +223,8 @@ $fontFamily: "Roboto Medium";
   }
 }
 .RecommendationItem{
-  border: 1px gray;
+  border-width: 0.2px;
+  border-style: solid;
   border-radius: 6px;
   min-height: 100px;
   display: flex;
@@ -220,6 +237,7 @@ $fontFamily: "Roboto Medium";
   & h2{
     font-size: 16px;
     font-style: normal;
+    margin-top: 0;
   }
   & a{
     font-size: 14px;
@@ -227,5 +245,8 @@ $fontFamily: "Roboto Medium";
     font-style: normal;
     text-decoration: none;
     margin-bottom: 2px;
+  }
+  & img{
+    max-width: 100%;
   }
 }

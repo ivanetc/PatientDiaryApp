@@ -35,10 +35,10 @@ const CareList = {
             },
             "5": {
                 "type": "article",
-                "name": "Статья на Википедии",
-                "description": "Может пригодиться",
-                "link": "https://ru.wikipedia.org/wiki/Биполярное_расстройство",
-                "imageLink": "https://upload.wikimedia.org/wikipedia/commons/6/66/VanGogh-starry_night_ballance1.jpg"
+                "name": "Суицидальные мысли у неизлечимо больных людей",
+                "description": "Иногда тяжелобольные пациенты задумываются о том, чтобы уйти из жизни, не дожидаясь ее естественного завершения. Как помочь им избежать этого шага.\n",
+                "link": "https://pro-palliativ.ru/blog/suitsidalnye-mysli-u-neizlechimo-bolnyh-lyudej/",
+                "imageLink": "https://pro-palliativ.ru/wp-content/uploads/2020/03/Photo-by-K.-Mitch-Hodge-on-Unsplash.jpg"
                 },
             "6": {
                 "type": "contact",
@@ -51,6 +51,13 @@ const CareList = {
                 "name": "Случайный номер телефона - позвони и пошути!)",
                 "link": "",
                 "phone": "8(918)944-11-32"
+            },
+            "8": {
+                "type": "article",
+                "name": "«Поговорим о деменции». Глава 2. «Пегги»",
+                "description": "Отрывок из книги Лоры Уэймен о роли ухаживающего и о том, что может произойти, если родственник человека с деменцией не заботится о себе\n",
+                "link": "https://pro-palliativ.ru/blog/pogovorim-o-dementsii-glava-2-peggi/",
+                "imageLink": "https://pro-palliativ.ru/wp-content/uploads/2018/10/Pogovorim-o-dementsii_oblozhka-1.jpg"
             },
         },
         "dailyPlan": {
