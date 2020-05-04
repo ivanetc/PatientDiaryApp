@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 
 function RecommendationArticle({ header, text, imageLink, sourceLink }) {
     return (
-        <Grid item xs={9}>
+        <Grid item xs={12}>
 
             <div className="RecommendationItem GrayContainer">
                 <Grid container spacing={3}>
