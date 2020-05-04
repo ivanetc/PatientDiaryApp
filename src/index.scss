@@ -17,13 +17,18 @@ body {
   font-family: $fontFamily;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-image: url("./Resources/Images/background.png");
   background-size: 80%;
   background-position: top;
   background-repeat: no-repeat;
   background-color: white;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -38,7 +43,7 @@ $secondaryColor2: #FF5830;
 // HEADER COMPONENT CSS
 .App-header {
   width: 100%;
-  height: 70px;
+  height: 10%;
   background-color: $primaryColor;
   color: black;
   margin-top: 0;
@@ -127,6 +132,19 @@ $secondaryColor2: #FF5830;
     font-size: 14px;
   }
 }
+
+/*Responsive Header*/
+@media (max-width: 700px) {
+  .App-header {
+    flex-direction: column;
+    height: 70%;
+  }
+
+  .App-navi {
+    flex-direction: column;
+  }
+}
+
 // for button
 .MuiButton-containedSecondary{
   background-color: $secondaryColor2 !important;
