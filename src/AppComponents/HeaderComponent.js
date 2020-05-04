@@ -7,7 +7,7 @@ import Data from "../DataClasses/Data.js";
 
 
 function Header() {
-    let user = Data.Data.getUserProfile(1);
+    let user = Data.Data.getUserProfile(0);
     return (
         <header className="App-header">
             <img src={logo} alt="Логотип"/>
