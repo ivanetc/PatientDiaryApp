@@ -307,3 +307,19 @@ $secondaryColor: #B3371B;
     max-width: 100%;
   }
 }
+/*КАЛЕНДАРЬ СТАТИСТИКА ГРАФИКИ*/
+.all_charts{
+  border: 1px solid darkgray;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.title_charts{
+  font-size: large;
+  text-transform: uppercase;
+  margin: 10px 0;
+  text-align: -webkit-center;
+}
+
+.calendar_charts_field{}
+.line_charts_field{}
