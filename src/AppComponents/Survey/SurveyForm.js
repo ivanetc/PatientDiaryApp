@@ -48,14 +48,14 @@ class SurveyForm extends React.Component {
       key => <Question handler={this.handleChange} question={this.props.questions[key]} id={key}/>
     );
     return (
-      <Paper className={'all_surveys'}>
+      <div className={'all_surveys'}>
         <form onSubmit={this.handleSubmit}>
           {questions}
           <Button type={'submit'}>
             Отправить
           </Button>
         </form>
-      </Paper>
+      </div>
     );
   }
 }

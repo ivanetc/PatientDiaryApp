@@ -10,6 +10,7 @@ import Data from "./DataClasses/Data.js";
 import RecommendationsComponent from "./AppComponents/RecommendationsComponent";
 import CalendarComponent from "./AppComponents/СalendarComponent";
 import DailyPlanComponent from "./AppComponents/DailyPlanComponent";
+import Header from "./AppComponents/HeaderComponent";
 Data.Data.init();
 
 const Router = ReactRouterDOM.BrowserRouter;
@@ -19,6 +20,7 @@ const Switch = ReactRouterDOM.Switch;
 
 ReactDOM.render(
     <Router>
+        <Header/>
         <Switch>
             <Route exact path="/" component={ProfilPageComponent} />
             <Route exact path="/daily_plan" component={DailyPlanComponent} />
@@ -27,6 +29,7 @@ ReactDOM.render(
             <Route path="/calendar" component={CalendarComponent} />
             <Route component={NotFoundComponent} />
         </Switch>
-    </Router>,
+    </Router>
+    ,
     document.getElementById("root")
 );

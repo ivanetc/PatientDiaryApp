@@ -23,7 +23,7 @@ const ProfilAll = ({firstName, lastName, email, careId, careList}) => {
             <MenuItem value={key}>
             <em>{careList[key].name}</em>
             </MenuItem>
-        )
+        );
 
         return (
                 <ul className="profile_contents" className="all_field">
@@ -61,8 +61,7 @@ function ProfilPageComponent() {
         let user = Data.Data.getUserProfile(0);
         let careList = Data.Data.getCareList();
         let html =
-        <div>
-                <Header/>
+        <div className="app_body">
                 <Paper className="all_profile_content">
                         <div className="profile_header">Профиль</div>
                         <ProfilAll

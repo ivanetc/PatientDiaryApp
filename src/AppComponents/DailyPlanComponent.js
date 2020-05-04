@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./HeaderComponent";
-import FreeForm from "./Survey/FreeForm";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Data from "../DataClasses/Data";
@@ -9,7 +8,7 @@ import DailySurveyItem from "./DailyPlan/DailySurveyItem";
 
 function DailyPlanComponent() {
     const section = {
-        minHeight: "95%"
+        minHeight: "95%",
     };
     let userId = 0;
     let user = Data.Data.getUserProfile(userId);
@@ -26,8 +25,7 @@ function DailyPlanComponent() {
     );
 
     let html =
-        <div className="BodyDiv">
-            <Header/>
+        <div className="BodyDiv app_body">
             <Grid
                 className="DayItemsContainer"
                 alignItems="stretch"

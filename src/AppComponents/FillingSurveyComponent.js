@@ -2,17 +2,19 @@ import React from "react";
 import Header from "./HeaderComponent";
 import SurveyForm from "./Survey/SurveyForm";
 import Survey from "../DataClasses/survey";
+import Paper from "@material-ui/core/Paper";
 
 function FillingSurveyComponent(prop) {
-    let surveyId = prop.match.params.id;
-  const survey = Survey.Survey;
-  const surveyId = Object.keys(survey)[0];
+  const surveyId = prop.match.params.id;
+  const AllSurveys = Survey.Survey;
+  let currentSurvey = AllSurveys[surveyId];
   return (
-      <div>
-        <Header/>
-        <h2>Заполнение опроса</h2>
-        <p>Здесь будет опрос с id = {surveyId}</p>
-        <SurveyForm userId={0} surveyId={surveyId} questions={survey[surveyId].questions} />
+      <div className="app_body">
+          <Paper className="all_charts">
+              <h2 className="profile_header">Заполнение опроса "{currentSurvey.name}"</h2>
+              <span className="survey_description">Описание: {currentSurvey.description}</span>
+              <SurveyForm userId={0} surveyId={surveyId} questions={currentSurvey.questions} />
+          </Paper>
       </div>
     );
 }

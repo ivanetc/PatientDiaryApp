@@ -7,8 +7,12 @@ const SliderQuestion = props => {
   const marks = Object.keys(props.answers).map(
     (key, i) => ({ label: props.answers[key].text, value: i})
   );
+  const style = {
+    width: "50%",
+    marginLeft: "25%"
+  };
   return (
-    <div>
+    <div style={style}>
       <FormControl>
         <FormLabel>
           {props.question}

@@ -55,8 +55,7 @@ function RecommendationsComponent() {
     );
 
     return (
-        <div style={body}>
-            <Header/>
+        <div className="app_body" style={body}>
             <div className="ComponentBody">
                 <h1>{user.care}. Рекомендации.</h1>
                 <Grid

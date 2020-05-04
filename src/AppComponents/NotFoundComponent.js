@@ -4,7 +4,6 @@ import Header from "./HeaderComponent";
 function NotFoundComponent() {
     let html =
         <div>
-            <Header/>
             <h2>404... Страница, которая так и не нашла заботы о себе</h2>
         </div>;
 
