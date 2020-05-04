@@ -17,7 +17,8 @@ const Data = {
     addSurveyResult(userId, surveyId, data) {
         this.user[userId].surveyResults.append({
             "surveyId": surveyId,
-            "surveyResult": Survey[surveyId].aggregate(data)
+            "surveyScore": Survey[surveyId].aggregate(data),
+            "surveyResult": data
         });
     },
 
@@ -46,6 +47,10 @@ const Data = {
 
     getDailyPlan(careId){
         return this.careList[careId].dailyPlan
+    },
+
+    getHelpPage(careId){
+        return this.careList[careId].help
     }
 };
 
