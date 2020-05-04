@@ -48,7 +48,7 @@ const CareList = {
             },
             "7": {
                 "type": "contact",
-                "name": "Случайный номер телефона - позвони и пошути!)",
+                "name": "Горячая линия",
                 "link": "",
                 "phone": "8(918)944-11-32"
             },
@@ -58,6 +58,18 @@ const CareList = {
                 "description": "Отрывок из книги Лоры Уэймен о роли ухаживающего и о том, что может произойти, если родственник человека с деменцией не заботится о себе\n",
                 "link": "https://pro-palliativ.ru/blog/pogovorim-o-dementsii-glava-2-peggi/",
                 "imageLink": "https://pro-palliativ.ru/wp-content/uploads/2018/10/Pogovorim-o-dementsii_oblozhka-1.jpg"
+            },
+            "9": {
+                "type": "contact",
+                "name": "Про Паллиатив",
+                "link": "https://pro-palliativ.ru",
+                "phone": ""
+            },
+            "10": {
+                "type": "contact",
+                "name": "Мастерская заботы",
+                "link": "https://www.youtube.com/channel/UCmMFZV1ZybknauJayLOWvQg",
+                "phone": ""
             },
         },
         "dailyPlan": {

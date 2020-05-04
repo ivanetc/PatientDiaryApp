@@ -15,6 +15,10 @@ function RecommendationsComponent() {
     let allRecommendations = Data.Data.getRecommendations(careId);
     let {recommendations, contacts, usefulLinks, articles} = getRecommendations(allRecommendations);
 
+    const section = {
+        minHeight: "95%"
+    };
+
     let articleComponents = articles.map(
         article => <RecommendationArticle
                         header={article.name}
@@ -30,37 +34,43 @@ function RecommendationsComponent() {
         </div>
     );
 
+    let linksComponents = usefulLinks.map(
+        link => <div>
+            <a href={link.link}>{link.name}</a>
+        </div>
+    );
 
-
-    recommendations.pop();
-    contacts.pop();
-    usefulLinks.pop();
-
-
+    let recommendationComponents = recommendations.map(
+        recommendation =>
+            <Grid style={section} item xs={3}>
+                <div className="RecommendationItem GrayContainer">
+                    <h3>{recommendation.name}</h3>
+                    <p>{recommendation.description}</p>
+                </div>
+            </Grid>
+    );
 
     return (
         <div >
             <Header/>
             <div className="ComponentBody">
                 <h1>{user.care}. Рекомендации.</h1>
-                <Grid className="RecommendationContainer" container spacing={3}>
-                    <Grid item xs={9}>
-                        <Paper className="RecommendationItem">xs=6</Paper>
-                    </Grid>
-                    <Grid item xs={3}>
+                <Grid
+                    className="RecommendationContainer"
+                    alignItems="stretch"
+                    direction="row"
+                    justify="center"
+                    container
+                    spacing={3}
+                >
+                    <Grid style={section} item xs={3}>
                         <div className="RecommendationItem GreenContainer">
                             <h2>Полезные ресурсы</h2>
-                            <a href="https://pro-palliativ.ru">Про Паллиатив</a>
-                            <a href="https://www.youtube.com/channel/UCmMFZV1ZybknauJayLOWvQg">Мастерская заботы</a>
+                            {linksComponents}
                         </div>
                     </Grid>
-                    <Grid item xs={6}>
-                        <Paper className="RecommendPaperClass">xs=6</Paper>
-                    </Grid>
-                    <Grid item xs={6}>
-                        <Paper className="RecommendPaperClass">xs=3</Paper>
-                    </Grid>
-                    <Grid item xs={3}>
+                    {recommendationComponents}
+                    <Grid style={section} item xs={3}>
                         <div className="RecommendationItem RedContainer">
                             <h2>Важные телефоны</h2>
                             {contactComponents}
