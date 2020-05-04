@@ -133,6 +133,10 @@ $secondaryColor2: #FF5830;
 .App-header-exit-button{
   margin-left: 5px;
   margin-right: 5px;
+
+  a {
+    text-decoration-line: none;
+  }
 }
 
 // FreeForm component css
@@ -480,9 +484,37 @@ $secondaryColor2: #FF5830;
 }
 
 /*АВТОРИЗАЦИЯ*/
-.authorization {
-  background-color: #00925F;
+.auth_container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin-top: 100px;
+
+  .auth_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+
+
+    .authorization {
+      background-color: $primaryColor;
+      opacity: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 380px;
+      width: 99%;
+
+      .MuiInputBase-root {
+        background-color: #FFFFFF;
+      }
+
+      .auth_header {
+        color: #FFFFFF;
+        font-family: Roboto, sans-serif;
+      }
+    }
+  }
 }
