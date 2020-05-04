@@ -6,7 +6,8 @@ const Users = {
         "login": "ivanetc",
         "password": "psd",
         "careId": "1",
-        "surveyResults": []
+        "surveyResults": [],
+        "planImplementation": []
     },
     "1": {
         "firstName": "Дарья",
