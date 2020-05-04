@@ -21,9 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a41cc3d0-35d3-4c9a-a045-a56221ff204b" name="Default Changelist" comment="Красивенький профиль но чтение данных не работает и всё лежит">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppComponents/ProfilPageComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppComponents/ProfilPageComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataClasses/Data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataClasses/Data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -228,25 +225,25 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="466" y="157" width="424" height="487" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1588524222771" />
-    <state width="1345" height="182" key="GridCell.Tab.0.bottom" timestamp="1588578742473">
+    <state width="1345" height="182" key="GridCell.Tab.0.bottom" timestamp="1588582254133">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1588578742473" />
+    <state width="1345" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1588582254133" />
     <state width="1320" height="175" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1588524336725" />
-    <state width="1345" height="182" key="GridCell.Tab.0.center" timestamp="1588578742473">
+    <state width="1345" height="182" key="GridCell.Tab.0.center" timestamp="1588582254132">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1588578742473" />
+    <state width="1345" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1588582254132" />
     <state width="1320" height="175" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1588524336724" />
-    <state width="1345" height="182" key="GridCell.Tab.0.left" timestamp="1588578742472">
+    <state width="1345" height="182" key="GridCell.Tab.0.left" timestamp="1588582254132">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1588578742472" />
+    <state width="1345" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1588582254132" />
     <state width="1320" height="175" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1588524336724" />
-    <state width="1345" height="182" key="GridCell.Tab.0.right" timestamp="1588578742473">
+    <state width="1345" height="182" key="GridCell.Tab.0.right" timestamp="1588582254133">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1588578742473" />
+    <state width="1345" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1588582254133" />
     <state width="1320" height="175" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1588524336724" />
     <state x="129" y="55" key="MergeDialog" timestamp="1588541052321">
       <screen x="0" y="0" width="1366" height="738" />

@@ -211,10 +211,11 @@ $fontFamily: "Roboto Medium";
   border-color: $secondaryColor !important;
 }
 
-/* --- Это для профиля, если будем разносить по разным файлам сss то вот эту штуку отдельно в профиль
-  .MuiFormLabel-root.Mui-focused {
-  color: darkgray!important;
-}*/
+.inputlabel-profile.Mui-focused {
+    color: darkgray!important;
+    background-color: white;
+  }
+
 
 //RECOMMENDATION COMPONENT
 .ComponentBody{
