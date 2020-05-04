@@ -7,14 +7,17 @@ import Checkbox from "@material-ui/core/Checkbox";
 
 const CheckboxQuestion = props => {
   const options = Object.keys(props.answers).map(
-    key => <FormControlLabel control={<Checkbox/>} label={props.answers[key].text}/>
+    key => <FormControlLabel
+      control={<Checkbox required={true} onChange={props.handler}/>}
+      label={props.answers[key].text}
+    />
     );
 
   return (
     <div>
       <FormControl>
         <FormLabel>{props.question}</FormLabel>
-        <FormGroup name='checkbox'>
+        <FormGroup name={props.id}>
           {options}
         </FormGroup>
       </FormControl>

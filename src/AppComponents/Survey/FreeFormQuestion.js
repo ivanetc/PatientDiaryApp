@@ -3,19 +3,19 @@ import React from 'react';
 import TextField from '@material-ui/core/TextField';
 
 
+const FreeFormQuestion = props => {
 
-
-const FreeFormQuestion = ({label, name}) => {
-
-    return (
-        <div className="onefreeform">
-                <TextField
-                    type="textarea"
-                    name={name}
-                    className="inputfreeform"
-                    label={label}
-                />
-        </div>);
+  return (
+    <div className="onefreeform">
+      <TextField
+        onChange={props.handler}
+        required={true}
+        type="textarea"
+        name={props.id}
+        className="inputfreeform"
+        label={props.label}
+      />
+    </div>);
 }
 
 export default FreeFormQuestion;

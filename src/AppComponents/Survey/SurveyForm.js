@@ -1,13 +1,14 @@
 import React from "react";
 import Question from "./Question";
 import Button from "@material-ui/core/Button";
+import Data from "../../DataClasses/Data"
 
 class SurveyForm extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      value: '',
+      value: {},
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -15,18 +16,26 @@ class SurveyForm extends React.Component {
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+    const target = event.target;
+    this.setState(
+      prevState => ({
+        value: {
+          ...prevState.value,
+          [target.name]: target.value,
+        }
+      }));
   }
 
   handleSubmit(event) {
-    alert('ЖОПА' + this.state.value);
+    const props = this.props;
+    Data.Data.addSurveyResult(props.userId, props.surveyId, this.state.value);
     event.preventDefault();
   }
 
   render() {
     const questions = Object.keys(this.props.questions).map(
-      key => <Question handler={this.handleChange()} question={this.props.questions[key]}/>
-      );
+      key => <Question handler={this.handleChange} question={this.props.questions[key]} id={key}/>
+    );
     return (
       <form onSubmit={this.handleSubmit}>
         {questions}

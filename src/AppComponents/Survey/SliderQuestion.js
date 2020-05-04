@@ -14,7 +14,8 @@ const SliderQuestion = props => {
           {props.question}
         </FormLabel>
         <Slider
-          defaultValue={10}
+          onChange={props.handler}
+          name={props.id}
           step={1}
           marks={marks}
           max={(marks.length - 1)}

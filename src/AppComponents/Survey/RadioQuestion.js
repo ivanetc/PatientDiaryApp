@@ -10,15 +10,16 @@ const RadioQuestion = props => {
     key =>
       <FormControlLabel
         value={props.answers[key].text}
-        control={<Radio onChange={props.handler}/>}
-        label={props.answers[key].text}/>
+        control={<Radio required={true} onChange={props.handler}/>}
+        label={props.answers[key].text}
+      />
     );
 
   return (
     <div>
       <FormControl>
         <FormLabel>{props.question}</FormLabel>
-        <RadioGroup name='radio'>
+        <RadioGroup name={props.id}>
           {options}
         </RadioGroup>
       </FormControl>
