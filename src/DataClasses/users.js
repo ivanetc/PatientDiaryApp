@@ -5,7 +5,7 @@ const Users = {
         "email": "ivanetsas@yandex.ru",
         "login": "ivanetc",
         "password": "psd",
-        "careId": "0",
+        "careId": "1",
         "surveyResults": []
     },
     "1": {
@@ -15,7 +15,8 @@ const Users = {
         "login": "sokolova",
         "password": "psd",
         "careId": "0",
-        "surveyResults": []
+        "surveyResults": [],
+        "planImplementation": []
     }
 };
 
