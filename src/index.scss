@@ -78,6 +78,12 @@ $secondaryColor2: #FF5830;
     font-family: $fontFamily , sans-serif;
   }
 }
+.App-navi-hided{
+  display: none !important;
+}
+.App-navi-item-underlined{
+  border-bottom: 2px solid $secondaryColor2;
+}
 
 .App-navi-item {
   max-width: 120px;
