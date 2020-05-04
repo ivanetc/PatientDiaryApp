@@ -13,6 +13,7 @@ import CalendarComponent from "./AppComponents/СalendarComponent";
 import DailyPlanComponent from "./AppComponents/DailyPlanComponent";
 import Header from "./AppComponents/HeaderComponent";
 import SurveyResultComponent from "./AppComponents/DailyPlan/SurveyResultComponent";
+import Authorization from "./AppComponents/Authorization";
 
 Data.Data.init();
 
@@ -25,7 +26,8 @@ ReactDOM.render(
     <Router history={history}>
         <Header/>
         <Switch>
-            <Route exact path="/" component={ProfilPageComponent} />
+            <Route exact path="/" component={Authorization} />
+            <Route exact path="/profile" component={ProfilPageComponent} />
             <Route exact path="/daily_plan" component={DailyPlanComponent} />
             <Route path="/daily_plan/survey:id" component={FillingSurveyComponent} />
             <Route path="/daily_plan/result_survey:id/:result" component={SurveyResultComponent} />
