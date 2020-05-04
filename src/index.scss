@@ -215,3 +215,79 @@ $fontFamily: "Roboto Medium";
   .MuiFormLabel-root.Mui-focused {
   color: darkgray!important;
 }*/
+
+//RECOMMENDATION COMPONENT
+.ComponentBody{
+  margin-left: 5%;
+}
+
+.RecommendationContainer{
+  max-width: 90%;
+}
+
+
+.GrayContainer{
+  background-color: #f2f2f2;
+  border-color: lightgray;
+  color: black;
+  & a {
+    color: black;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+}
+
+.GreenContainer{
+  background-color: lightgreen;
+  border-color: $primaryColor;
+  color: black;
+  & a {
+    color: black;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+}
+
+.RedContainer{
+  background-color: $secondaryColor;
+  border-color: darkred;
+  color: white;
+  & a {
+    color: white;
+    &:hover {
+      color: black;
+    }
+  }
+}
+.RecommendationItem{
+  border-width: 0.2px;
+  border-style: solid;
+  border-radius: 6px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 15px;
+  font-family: $fontFamily;
+
+
+  & h2{
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 0;
+  }
+  & a{
+    font-size: 14px;
+    font-family: $fontFamily;
+    font-style: normal;
+    text-decoration: none;
+    margin-bottom: 2px;
+  }
+  & img{
+    max-width: 100%;
+  }
+}

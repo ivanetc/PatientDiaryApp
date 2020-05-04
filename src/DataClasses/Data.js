@@ -17,7 +17,8 @@ const Data = {
     addSurveyResult(userId, surveyId, data) {
         this.user[userId].surveyResults.append({
             "surveyId": surveyId,
-            "surveyResult": Survey[surveyId].aggregate(data)
+            "surveyScore": Survey[surveyId].aggregate(data),
+            "surveyResult": data
         });
     },
 
@@ -41,12 +42,20 @@ const Data = {
         this.users[userId].careId = careId
     },
 
-    getRecommendations(careId){
+    getRecommendations(careId) {
         return this.careList[careId].recommendations
     },
 
-    getDailyPlan(careId){
-        return this.careList[careId].dailyPlan
+    getDailyPlan(userId, careId) {
+        let plan = this.careList[careId].dailyPlan;
+        for (let pointId in plan){
+            plan[pointId].checked = this.users[userId].planImplementation.indexOf(pointId) !== -1;
+        }
+        return plan
+    },
+
+    checkPoint(userId, pointId) {
+        this.users[userId].planImplementation.append(pointId)
     }
 };
 

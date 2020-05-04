@@ -7,6 +7,7 @@ import ProfilPageComponent from "./AppComponents/ProfilPageComponent";
 import NotFoundComponent from "./AppComponents/NotFoundComponent";
 import FillingSurveyComponent from "./AppComponents/FillingSurveyComponent";
 import Data from "./DataClasses/Data.js";
+import RecommendationsComponent from "./AppComponents/RecommendationsComponent";
 Data.Data.init();
 
 const Router = ReactRouterDOM.BrowserRouter;
@@ -19,6 +20,7 @@ ReactDOM.render(
         <Switch>
             <Route exact path="/" component={ProfilPageComponent} />
             <Route path="/fill_survey" component={FillingSurveyComponent} />
+            <Route path="/recommendations" component={RecommendationsComponent} />
             <Route component={NotFoundComponent} />
         </Switch>
     </Router>,

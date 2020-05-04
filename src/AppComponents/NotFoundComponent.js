@@ -5,7 +5,7 @@ function NotFoundComponent() {
     let html =
         <div>
             <Header/>
-            <h2>Главная</h2>
+            <h2>404... Страница, которая так и не нашла заботы о себе</h2>
         </div>;
 
     return html;
