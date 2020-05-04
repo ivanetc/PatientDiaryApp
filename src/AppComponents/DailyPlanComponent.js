@@ -19,6 +19,7 @@ function DailyPlanComponent() {
         <DailySurveyItem
             surveyName={survey.text}
             surveyId={survey.surveyId}
+            surveyDisabled={Data.Data.checkSurvey(userId, survey.surveyId)}
         />
     );
 

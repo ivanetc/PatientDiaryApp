@@ -122,6 +122,8 @@ const Data = {
     },
 
     checkSurvey(userId, surveyId){
+        console.log(surveyId);
+        console.log(this.users[userId].surveyResults);
         let result = false;
         for (let survey in this.users[userId].surveyResults) {
             if (survey.surveyId === surveyId){
