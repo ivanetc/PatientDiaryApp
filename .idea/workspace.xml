@@ -19,19 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb2b9e80-f61c-4312-80ad-deae8f07f63d" name="Default Changelist" comment="Класс данных и метод для опросов">
-      <change afterPath="$PROJECT_DIR$/src/Resources/Images/background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+    <list default="true" id="eb2b9e80-f61c-4312-80ad-deae8f07f63d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppComponents/DailyPlanComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppComponents/DailyPlanComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppComponents/FillingSurveyComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppComponents/FillingSurveyComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppComponents/NotFoundComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppComponents/NotFoundComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppComponents/ProfilPageComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppComponents/ProfilPageComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppComponents/RecommendationsComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppComponents/RecommendationsComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppComponents/Survey/SliderQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppComponents/Survey/SliderQuestion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppComponents/Survey/SurveyForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppComponents/Survey/SurveyForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppComponents/СalendarComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppComponents/СalendarComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588602118506</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Зашаманил фон и опросы. Какая-то хренотень">
+      <created>1588607676028</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1588607676028</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +220,8 @@
     <MESSAGE value="Типо профиль с проектом" />
     <MESSAGE value="Красивенький профиль но чтение данных не работает и всё лежит" />
     <MESSAGE value="План дня. Опрос в новой вкладке. Роутинг с параметрами" />
-    <option name="LAST_COMMIT_MESSAGE" value="План дня. Опрос в новой вкладке. Роутинг с параметрами" />
+    <MESSAGE value="Зашаманил фон и опросы. Какая-то хренотень" />
+    <option name="LAST_COMMIT_MESSAGE" value="Зашаманил фон и опросы. Какая-то хренотень" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1588577306792">
@@ -246,10 +244,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="392" y="54" key="#start/0.0.1366.738@0.0.1366.738" timestamp="1588531138314" />
-    <state x="292" y="30" width="771" height="738" key="CommitChangelistDialog2" timestamp="1588602118192">
+    <state x="292" y="30" width="771" height="738" key="CommitChangelistDialog2" timestamp="1588607675711">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="292" y="30" width="771" height="738" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1588602118192" />
+    <state x="292" y="30" width="771" height="738" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1588607675711" />
     <state x="117" y="244" width="747" height="457" key="EditFileWatcherDialog" timestamp="1588522806856">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -282,33 +280,33 @@
     </state>
     <state width="1345" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1588582254133" />
     <state width="1320" height="175" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1588524336724" />
-    <state x="129" y="85" width="1092" height="623" key="MergeDialog" timestamp="1588602315242">
+    <state x="129" y="85" width="1092" height="623" key="MergeDialog" timestamp="1588607696305">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="129" y="55" key="MergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1588541052321" />
-    <state x="129" y="85" width="1092" height="623" key="MergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1588602315242" />
-    <state x="571" y="266" width="389" height="265" key="MultipleFileMergeDialog" timestamp="1588602315250">
+    <state x="129" y="85" width="1092" height="623" key="MergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1588607696305" />
+    <state x="571" y="183" width="580" height="585" key="MultipleFileMergeDialog" timestamp="1588607696310">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="571" y="236" width="389" height="265" key="MultipleFileMergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1588541052328" />
-    <state x="571" y="266" key="MultipleFileMergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1588602315250" />
+    <state x="571" y="183" width="580" height="585" key="MultipleFileMergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1588607696310" />
     <state x="184" y="13" key="SettingsEditor" timestamp="1588576430948">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="13" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1588576430948" />
-    <state x="275" y="131" width="800" height="539" key="Vcs.Push.Dialog.v2" timestamp="1588602130125">
+    <state x="275" y="131" width="800" height="539" key="Vcs.Push.Dialog.v2" timestamp="1588607718635">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1588541004892" />
-    <state x="275" y="131" width="800" height="539" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1588602130125" />
+    <state x="275" y="131" width="800" height="539" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1588607718635" />
     <state x="463" y="81" key="git4idea.branch.GitSmartOperationDialog" timestamp="1588531860973">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="81" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.738@0.0.1366.738" timestamp="1588531860973" />
-    <state x="402" y="175" width="552" height="451" key="git4idea.merge.GitPullDialog" timestamp="1588602221435">
+    <state x="402" y="175" width="552" height="451" key="git4idea.merge.GitPullDialog" timestamp="1588607688505">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="402" y="175" width="552" height="451" key="git4idea.merge.GitPullDialog/0.30.1366.738@0.30.1366.738" timestamp="1588602221435" />
+    <state x="402" y="175" width="552" height="451" key="git4idea.merge.GitPullDialog/0.30.1366.738@0.30.1366.738" timestamp="1588607688505" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1588526656929">
       <screen x="0" y="30" width="1366" height="738" />
     </state>

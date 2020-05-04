@@ -5,7 +5,6 @@ import Paper from "@material-ui/core/Paper";
 import Data from "../DataClasses/Data";
 import DailySurveyItem from "./DailyPlan/DailySurveyItem";
 
-
 function DailyPlanComponent() {
     const section = {
         minHeight: "95%",
