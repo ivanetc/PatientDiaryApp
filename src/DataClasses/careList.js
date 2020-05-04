@@ -96,6 +96,24 @@ const CareList = {
                 "description": "Человек существо социальное. Общение поможет больному держаться.",
                 "link": "https://drive.google.com/open?id=1jkzXqLaBdi5iq2efcANlw3H0_JwGZI0e"
             },
+            "4": {
+                "type": "contact",
+                "name": "Про Паллиатив",
+                "link": "https://pro-palliativ.ru",
+                "phone": ""
+            },
+            "5": {
+                "type": "contact",
+                "name": "Мастерская заботы",
+                "link": "https://www.youtube.com/channel/UCmMFZV1ZybknauJayLOWvQg",
+                "phone": ""
+            },
+            "6": {
+                "type": "contact",
+                "name": "Горячая линия",
+                "link": "",
+                "phone": "8(800)555-35-35"
+            },
         },
         "dailyPlan": {
             "0": {

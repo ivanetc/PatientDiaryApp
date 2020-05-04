@@ -58,7 +58,7 @@ const ProfilAll = ({firstName, lastName, email, careId, careList}) => {
 }
 
 function ProfilPageComponent() {
-        let user = Data.Data.getUserProfile(1);
+        let user = Data.Data.getUserProfile(0);
         let careList = Data.Data.getCareList();
         let html =
         <div>
