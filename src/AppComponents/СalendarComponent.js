@@ -16,9 +16,11 @@ function CalendarComponent() {
         <div className="app_body">
             <Paper className="all_charts">
                 <div className="title_charts">Календарь и статистика</div>
+                <div className="title_calendar">Календарь ухода</div>
                 <div className="calendar_charts_field">
                     <СalendarChartComp fish={fishCal}/>
                 </div>
+                <div className="title_line">Статистика состояния</div>
                 <div className="line_charts_field"><LineChartComp fish={fishLine} /></div>
             </Paper>
         </div>;

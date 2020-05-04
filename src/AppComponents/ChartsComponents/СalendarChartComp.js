@@ -5,11 +5,18 @@ const СalendarChartComp = ({fish}) => {
     return (
         <Chart
             width="1000px"
+            title="Календарь ухода"
             chartType="Calendar" //неизменяемая хрень
             loader={<div>Loading Chart</div>} //
             data={fish}
             options={{
                 title: '',
+                titleTextStyle: {
+                    color: 'grey',
+                    fontSize: 24,
+                    fontStyle: 'Roboto',
+                    bold: false,
+                },
                 //ЭТО ПУСТЫЕ ДНИ ЦВЕТА????
                 noDataPattern: {
                     backgroundColor: '#b3b3b3',

@@ -390,8 +390,27 @@ $secondaryColor2: #FF5830;
   text-align: -webkit-center;
 }
 
+.title_calendar{
+  margin-top: 4%;
+  margin-left: 5%;
+  font-color: grey!important;
+  font-family: $fontFamily;
+  font-weight: normal;
+  font-size: 24px;
+  align-self: flex-start;
+}
+
+.title_line{
+  margin-top: 4%;
+  margin-left: 5%;
+  font-color: grey!important;
+  font-family: $fontFamily;
+  font-weight: normal;
+  font-size: 24px;
+  align-self: flex-start;
+}
+
 .calendar_charts_field{
-  margin-top: 3%;
   width: 100%;
   align-self: center;
 }

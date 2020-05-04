@@ -10,7 +10,7 @@ const LineChartComp = ({fish}) => {
             data={fish}
             options={{
                 width: 1200,
-                title: 'Статистика',
+                title: '',
                 titleTextStyle: {
                     color: 'grey',
                     fontSize: 24,
