@@ -17,7 +17,15 @@ body {
   font-family: $fontFamily;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  background-image: url("./Resources/Images/background.png");
+  background-size: 80%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #ededed;
 }
+
 
 //code {
 //  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -122,6 +130,10 @@ $secondaryColor2: #FF5830;
 .MuiButton-containedSecondary{
   background-color: $secondaryColor2 !important;
 }
+.MuiButton-containedSizeSmall{
+  padding: 2px 7px !important;
+  font-size: 12px !important;
+}
 
 .App-header-exit-button{
   margin-left: 5px;
@@ -130,7 +142,7 @@ $secondaryColor2: #FF5830;
 
 // FreeForm component css
 .onefreeform{
-  background-color: aliceblue;
+  //background-color: aliceblue;
   padding: 10px;
   font-family: $fontFamily, sans-serif;
   width: max-content;
@@ -163,6 +175,8 @@ $secondaryColor2: #FF5830;
   text-transform: uppercase;
   margin: 10px 0;
   text-align: -webkit-center;
+  font-weight: normal;
+  color:rgba(0, 0, 0, 0.87)
 }
 
 .profile_header_line{}
@@ -278,7 +292,6 @@ $secondaryColor2: #FF5830;
   border-width: 0.2px;
   border-style: solid;
   border-radius: 6px;
-  min-height: 100px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -309,12 +322,60 @@ $secondaryColor2: #FF5830;
     max-width: 100%;
   }
 }
+
+// ПЛАН НА ДЕНЬ
+.BodyDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.DayItemsContainer{
+  max-width: 80%;
+}
+
+.DayItem{
+  border: 1px solid darkgray;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 2px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-right: 60px;
+  min-height: 400px;
+}
+
+.MuiPaper-root{
+  background-color: rgba(255,255,255,0.95) !important;
+  min-height: 400px;
+}
+
+.DailySurveyItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+  padding: 5px;
+
+  & a{
+    text-transform: uppercase;
+    margin-right: 8px;
+    font-family: $fontFamily;
+    font-weight: normal;
+    font-size: 14px;
+  }
+}
+
 /*КАЛЕНДАРЬ СТАТИСТИКА ГРАФИКИ*/
 .all_charts{
   border: 1px solid darkgray;
   margin: 50px;
+  padding-left: 25px;
   display: flex;
   flex-direction: column;
+}
+
+.survey_description{
+  margin-bottom: 20px;
 }
 .title_charts{
   font-size: large;
@@ -329,20 +390,36 @@ $secondaryColor2: #FF5830;
 /*ОПРОС*/
 
 .all_surveys {
-  border: 1px solid darkgray;
-  margin: 50px;
-  padding: 10px;
-
+  padding-bottom: 20px;
   form {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column !important;
+    align-items: flex-start;
 
     .MuiFormGroup-root {
-      flex-direction: row;
+      flex-direction: column !important;
       justify-content: space-evenly;
     }
+    .MuiFormControl-root{
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+      padding: 0px !important;
+    }
+    .PrivateSwitchBase-root-87{
+      padding: 2px 8px;
+      margin-left: 5px;
+    }
 
+    .MuiInputLabel-root{
+      margin-left: -10px;
+      margin-top: -20px;
+    }
+
+    .MuiInputBase-root{
+      //background-color: aliceblue;
+      margin-left: -10px;
+      margin-top: -5px;
+    }
     .MuiFormControl-root {
       width: 100%;
     }

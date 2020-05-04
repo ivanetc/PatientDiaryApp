@@ -8,8 +8,7 @@ import LineChartComp from "./ChartsComponents/LineChartComp";
 
 function CalendarComponent() {
     let html =
-        <div>
-            <Header/>
+        <div className="app_body">
             <Paper className="all_charts">
                 <div className="title_charts">Календарь и статистика</div>
                 <div className="calendar_charts_field"><СalendarChartComp /></div>
