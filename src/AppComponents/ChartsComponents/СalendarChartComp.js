@@ -4,7 +4,7 @@ import React from "react";
 const СalendarChartComp = ({fish}) => {
     return (
         <Chart
-            //width={1000}
+            width="1000px"
             chartType="Calendar" //неизменяемая хрень
             loader={<div>Loading Chart</div>} //
             data={fish}

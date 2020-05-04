@@ -4,11 +4,12 @@ import React from "react";
 const LineChartComp = ({fish}) => {
     return(
         <Chart
-            width="1000px"
+            width={'100%'}
             chartType="LineChart"
             loader={<div>Loading Chart</div>}
             data={fish}
             options={{
+                width: 1200,
                 title: 'Статистика',
                 titleTextStyle: {
                     color: 'grey',
@@ -18,10 +19,10 @@ const LineChartComp = ({fish}) => {
 
                 },
                 hAxis: {
-                    title: 'Time', //
+                    title: 'Дни', //
                 },
                 vAxis: {
-                    title: 'Popularity', //
+                    title: 'Значение', //
                 },
                 colors: ['#009662'],
             }}

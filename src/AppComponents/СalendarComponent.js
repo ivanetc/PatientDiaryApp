@@ -10,7 +10,7 @@ import Data from "../DataClasses/Data";
 function CalendarComponent() {
     let fishCal = Data.Data.getCalendarStatistic();
 
-    let fishLine = Data.Data.getSurveyStatistic(0, 0); //я не знаю, откуда я беру userID и surveyId, поэтому временно                                                     беру кастомные
+    let fishLine = Data.Data.getSurveyStatistic(0, 1); //я не знаю, откуда я беру userID и surveyId, поэтому временно                                                     беру кастомные
 
     let html =
         <div className="app_body">
