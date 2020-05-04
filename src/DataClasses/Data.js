@@ -44,12 +44,12 @@ const Data = {
         this.users[userId].careId = careId
     },
 
-    getRecommendations(careId) {
-        return this.careList[careId].recommendations
+    getRecommendations(userId) {
+        return this.careList[this.users[userId].careId].recommendations
     },
 
-    getDailyPlan(userId, careId) {
-        let plan = this.careList[careId].dailyPlan;
+    getDailyPlan(userId) {
+        let plan = this.careList[this.users[userId].careId].dailyPlan;
         for (let pointId in plan) {
             plan[pointId].checked = this.users[userId].planImplementation.indexOf(pointId) !== -1;
         }

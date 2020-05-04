@@ -7,9 +7,9 @@ import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
-import {classes} from "istanbul-lib-coverage";
-import makeStyles from "@material-ui/core/styles/makeStyles";
-import {keys} from "@material-ui/core/styles/createBreakpoints";
+//import {classes} from "istanbul-lib-coverage";
+//import makeStyles from "@material-ui/core/styles/makeStyles";
+//import {keys} from "@material-ui/core/styles/createBreakpoints";
 import Paper from "@material-ui/core/Paper";
 
 const ProfilAll = ({firstName, lastName, email, careId, careList}) => {

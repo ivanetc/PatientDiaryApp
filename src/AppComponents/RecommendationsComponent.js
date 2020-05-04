@@ -10,9 +10,9 @@ import RecommendationArticle from "./Recommentations/RecommendationArticle";
 
 function RecommendationsComponent() {
     let user = Data.Data.getUserProfile(0);
-    let careId = user.careId;
+    // let careId = user.careId;
 
-    let allRecommendations = Data.Data.getRecommendations(careId);
+    let allRecommendations = Data.Data.getRecommendations(0);
     let {recommendations, contacts, usefulLinks, articles} = getRecommendations(allRecommendations);
 
     const section = {
