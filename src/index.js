@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-//import Header from "./AppComponents/HeaderComponent";
+import './index.scss';
+
 import * as ReactRouterDOM from "react-router-dom";
 import ProfilPageComponent from "./AppComponents/ProfilPageComponent";
 import NotFoundComponent from "./AppComponents/NotFoundComponent";
 import FillingSurveyComponent from "./AppComponents/FillingSurveyComponent";
+import Data from "./DataClasses/Data.js";
+import RecommendationsComponent from "./AppComponents/RecommendationsComponent";
+import CalendarComponent from "./AppComponents/СalendarComponent";
+Data.Data.init();
 
 const Router = ReactRouterDOM.BrowserRouter;
 const Route = ReactRouterDOM.Route;
@@ -17,6 +21,8 @@ ReactDOM.render(
         <Switch>
             <Route exact path="/" component={ProfilPageComponent} />
             <Route path="/fill_survey" component={FillingSurveyComponent} />
+            <Route path="/recommendations" component={RecommendationsComponent} />
+            <Route path="/calendar" component={CalendarComponent} />
             <Route component={NotFoundComponent} />
         </Switch>
     </Router>,

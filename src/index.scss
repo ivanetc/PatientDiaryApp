@@ -1,0 +1,308 @@
+@font-face {
+  font-family: 'PD Roboto Medium';
+  src: local('Medium'), url(./Resources/Fonts/Roboto-Medium.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'PD Roboto Regular';
+  src: local('Regular'), url(./Resources/Fonts/Roboto-Regular.ttf) format('ttf');
+}
+$fontFamilyHeader: "PD Roboto Regular";
+$fontFamily: "PD Roboto Medium";
+
+body {
+  margin: 0;
+  //font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  //  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  //  sans-serif;
+  font-family: $fontFamily;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+//code {
+//  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+//    monospace;
+//}
+
+$primaryColor: #009662;
+$primaryColorDark: #00925F;
+$primaryColor2: #90FFD8;
+$secondaryColor: #B3371B;
+
+
+
+// HEADER COMPONENT CSS
+.App-header {
+  width: 100%;
+  height: 70px;
+  background-color: $primaryColor;
+  color: black;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  font-family: $fontFamily, sans-serif;
+
+  & img{
+    max-height: 70px;
+    margin-left: 5px;
+  }
+}
+
+.App-name {
+  font-size: 14pt;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.App-navi {
+  margin-right: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+
+  & a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: $fontFamily , sans-serif;
+  }
+}
+
+.App-navi-item {
+  max-width: 120px;
+  height: 56px;
+  text-align: center;
+  padding-right: 7px;
+  padding-left: 7px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    animation: 0.2s ease-in-out 1 pulse;
+
+    @keyframes pulse {
+      0% {
+          background: $primaryColor;
+          border-bottom: 0px solid $secondaryColor;
+        }
+
+      100% {
+        background: $primaryColorDark;
+        border-bottom: 2px solid $secondaryColor;
+      }
+    }
+    background: $primaryColorDark;
+    border-bottom: 2px solid $secondaryColor;
+    cursor: pointer;
+    color: white;
+  }
+}
+
+.App-header-right-part{
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  min-width: 25%;
+
+  & a{
+    color: white;
+    font-size: 14px;
+  }
+}
+// for button
+.MuiButton-containedSecondary{
+  background-color: $secondaryColor !important;
+}
+
+.App-header-exit-button{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+// FreeForm component css
+.onefreeform{
+  background-color: aliceblue;
+  padding: 10px;
+  font-family: $fontFamily, sans-serif;
+  width: max-content;
+  height: 100%;
+}
+.MuiFormLabel-root {
+  font-size: small!important;
+}
+
+.MuiInput-underline:after {
+  border-bottom: 2px solid $primaryColor!important;
+}
+
+.MuiFormLabel-root.Mui-focused{
+  color: $primaryColor!important;
+}
+
+/*СТРАНИЦА ПРОФИЛЯ*/
+
+.all_profile_content {
+  /*display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  border: 1px outset gray;
+  margin: 50px;
+}
+
+.profile_header {
+  font-size: large;
+  text-transform: uppercase;
+  margin: 10px 0;
+  text-align: -webkit-center;
+}
+
+.profile_header_line{}
+.profile_contents{
+  margin: 5%;
+}
+
+.all_field{
+  /*background-color: whitesmoke;*/
+  list-style-type: none;
+  border-radius: 3px;
+}
+
+.field {
+  display: flex;
+  justify-content:flex-start;
+}
+
+.field > label {
+  /*padding: .4em 1em .4em 0;*/
+  flex: 0.1;
+}
+.field > TextArea {
+  flex: 2;
+}
+
+.profile_local_content{}
+.profile_local_name{
+  padding: 1%!important;
+}
+.profile_local_line{}
+/*.MuiInput-underline:before{
+  content: none!important;
+}*/
+.MuiInput-underline.Mui-disabled:before{
+  border-bottom: 1px solid darkgray!important;
+}
+.MuiInputBase-root.Mui-disabled{
+  color: black!important;
+}
+
+.MuiFormControl-root {
+  padding: 1%!important;
+  /*padding-right: 10%!important;*/
+  vertical-align: baseline!important;
+}
+
+.MuiInputLabel-formControl {
+  top: auto!important;
+  left: auto!important;
+}
+.MuiOutlinedInput-root {
+  width: 300px;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+  border-color: $secondaryColor !important;
+}
+
+/* --- Это для профиля, если будем разносить по разным файлам сss то вот эту штуку отдельно в профиль
+  .MuiFormLabel-root.Mui-focused {
+  color: darkgray!important;
+}*/
+
+//RECOMMENDATION COMPONENT
+.ComponentBody{
+  margin-left: 5%;
+}
+
+.RecommendationContainer{
+  max-width: 90%;
+}
+
+
+.GrayContainer{
+  background-color: #f2f2f2;
+  border-color: lightgray;
+  color: black;
+  & a {
+    color: black;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+}
+
+.GreenContainer{
+  background-color: lightgreen;
+  border-color: $primaryColor;
+  color: black;
+  & a {
+    color: black;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+}
+
+.RedContainer{
+  background-color: $secondaryColor;
+  border-color: darkred;
+  color: white;
+  & a {
+    color: white;
+    &:hover {
+      color: black;
+    }
+  }
+}
+.RecommendationItem{
+  border-width: 0.2px;
+  border-style: solid;
+  border-radius: 6px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 15px;
+  font-family: $fontFamily;
+
+
+  & h2{
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 0;
+  }
+  & h3{
+    font-size: 16px;
+    font-style: revert;
+    margin-bottom: 0;
+    margin-top: 0.3em;
+  }
+  & a{
+    font-size: 14px;
+    font-family: $fontFamily;
+    font-style: normal;
+    text-decoration: none;
+    margin-bottom: 2px;
+  }
+  & img{
+    max-width: 100%;
+  }
+}

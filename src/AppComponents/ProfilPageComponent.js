@@ -1,42 +1,76 @@
 import React from "react";
 import Header from "./HeaderComponent";
-import Data from "./../DataClasses/DataClass";
+import Data from "../DataClasses/Data";
 import TextField from '@material-ui/core/TextField';
-import Divider from '@material-ui/core/Divider';
+import '../index.scss'
+import FormControl from "@material-ui/core/FormControl";
+import InputLabel from "@material-ui/core/InputLabel";
+import Select from "@material-ui/core/Select";
+import MenuItem from "@material-ui/core/MenuItem";
+import {classes} from "istanbul-lib-coverage";
+import makeStyles from "@material-ui/core/styles/makeStyles";
+import {keys} from "@material-ui/core/styles/createBreakpoints";
 
-//Data.init();
+const ProfilAll = ({firstName, lastName, email, careId, careList}) => {
+    const [nameCare, setCare] = React.useState('');
 
-const ProfilAll = ({firstName, lastName, email, care}) => {
+    const handleChange = (event) => {
+        setCare(event.target.value);
+    };
+
+    let MenuItems = Object.keys(careList).map(key =>
+            <MenuItem value={key}>
+            <em>{careList[key].name}</em>
+            </MenuItem>
+        )
+
         return (
-                <div className="profile_contents">
-                        <div className="profile_firstname" className="profile_local_content">
+                <ul className="profile_contents" className="all_field">
+                        <li className="profile_firstname" className="profile_local_content" className="field">
+                            <label className="profile_local_name">Имя:</label>
                             <TextField className="profile_local_content_field" disabled id="standard-disabled" label="" defaultValue={firstName} />
-                            <Divider className="profile_local_line"/>
-                        </div>
-                        <div className="profile_lasttname" className="profile_local_content">
+                        </li>
+                        <li className="profile_lasttname" className="profile_local_content" className="field">
+                            <label className="profile_local_name">Фамилия:</label>
                             <TextField disabled id="standard-disabled" label="" defaultValue={lastName} />
-                            <Divider className="profile_local_line"/>
-                        </div>
-                        <div className="profile_email" className="profile_local_content">
+                        </li>
+                        <li className="profile_email" className="profile_local_content" className="field">
+                            <label className="profile_local_name">E-mail:</label>
                             <TextField disabled id="standard-disabled" label="" defaultValue={email} />
-                            <Divider className="profile_local_line"/>
-                        </div>
-                        <div className="profile_care" className="profile_local_content">
-                            <TextField disabled id="standard-disabled" label="" defaultValue={care} />
-                            <Divider className="profile_local_line"/>
-                        </div>
-                </div>
+                        </li>
+                        <li className="profile_care" className="profile_local_content" className="field">
+                            <label className="profile_local_name"></label>
+                            <FormControl variant="outlined">
+                                <InputLabel id="demo-simple-select-outlined-label" className="inputlabel-profile">ВИД УХОДА</InputLabel>
+                                <Select
+                                    labelId="demo-simple-select-outlined-label"
+                                    id="demo-simple-select-outlined"
+                                    value={careId}
+                                    onChange={handleChange}
+                                    label="diagnosis">
+                                    {MenuItems}
+                                </Select>
+                            </FormControl>
+                        </li>
+                </ul>
         );
 }
 
 function ProfilPageComponent() {
+        let user = Data.Data.getUserProfile(1);
+        let careList = Data.Data.getCareList();
         let html =
         <div>
                 <Header/>
                 <div className="all_profile_content">
                         <div className="profile_header">Профиль</div>
-                        <Divider className="profile_header_line" />
-                        <ProfilAll firstName='Иван' lastName='Иванов' care='1' email='ivanov@mail.ru'/>
+                        <ProfilAll
+                            firstName={user.firstName}
+                            lastName={user.lastName}
+                            care={user.careId}
+                            email={user.login}
+                            careList={careList}
+                        />
                 </div>
         </div>;
         return html;
