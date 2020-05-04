@@ -174,3 +174,58 @@ $fontFamily: "Roboto Medium";
   padding: 1%!important;
   /*padding-right: 10%!important;*/
 }
+
+//RECOMMENDATION COMPONENT
+.ComponentBody{
+  margin-left: 5%;
+}
+
+.RecommendationContainer{
+  max-width: 90%;
+}
+
+.GreenContainer{
+  background-color: lightgreen;
+  color: black;
+  & a {
+    color: black;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+}
+
+.RedContainer{
+  background-color: $secondaryColor;
+  color: white;
+  & a {
+    color: white;
+    &:hover {
+      color: black;
+    }
+  }
+}
+.RecommendationItem{
+  border: 1px gray;
+  border-radius: 6px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 15px;
+  font-family: $fontFamily;
+
+
+  & h2{
+    font-size: 16px;
+    font-style: normal;
+  }
+  & a{
+    font-size: 14px;
+    font-family: $fontFamily;
+    font-style: normal;
+    text-decoration: none;
+    margin-bottom: 2px;
+  }
+}
