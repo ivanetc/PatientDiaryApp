@@ -15,7 +15,7 @@ const Data = {
     },
 
     addSurveyResult(userId, surveyId, data) {
-        this.user[userId].surveyResults.push({
+        this.users[userId].surveyResults.push({
             "surveyId": surveyId,
             "surveyScore": this.survey[surveyId].aggregate(data),
             "surveyResult": data,
@@ -98,6 +98,10 @@ const Data = {
             [new Date(2020, 5, 3), 2],
             [new Date(2020, 5, 4), 1],
         ]
+    },
+
+    getSurveyDecoding(surveyId){
+        return this.survey[surveyId].decoding
     }
 };
 
