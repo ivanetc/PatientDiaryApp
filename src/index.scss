@@ -239,6 +239,12 @@ $fontFamily: "Roboto Medium";
     font-style: normal;
     margin-top: 0;
   }
+  & h3{
+    font-size: 16px;
+    font-style: revert;
+    margin-bottom: 0;
+    margin-top: 0.3em;
+  }
   & a{
     font-size: 14px;
     font-family: $fontFamily;
