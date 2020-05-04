@@ -16,7 +16,7 @@ function Header() {
                 <Link className="App-navi-item" to='/'>Профиль </Link>
                 <Link className="App-navi-item" to='/fill_survey'>Дневной план </Link>
                 <Link className="App-navi-item" to='/recommendations'>Рекомендации</Link>
-                <Link className="App-navi-item" to='/fill_survey'>Календарь</Link>
+                <Link className="App-navi-item" to='/calendar'>Календарь</Link>
                 <Link className="App-navi-item" to='/fill_survey'>Сообщения</Link>
                 <Link className="App-navi-item" to='/fill_survey'>Справка</Link>
             </div>
