@@ -114,6 +114,24 @@ const CareList = {
                 "link": "",
                 "phone": "8(800)555-35-35"
             },
+            "7": {
+                "type": "recommendation",
+                "name": "Поддерживайте оптимальную температуру",
+                "description": "Оптимальная температура подарит больному ощущение комфорта",
+                "link": "https://drive.google.com/open?id=1jkzXqLaBdi5iq2efcANlw3H0_JwGZI0e"
+            },
+            "8": {
+                "type": "recommendation",
+                "name": "Включите любимую музыку человека",
+                "description": "Музыка помогает пациенту расслабиться и успокоиться",
+                "link": "https://drive.google.com/open?id=1jkzXqLaBdi5iq2efcANlw3H0_JwGZI0e"
+            },
+            "9": {
+                "type": "recommendation",
+                "name": "Не допускайте образования складок на постельном белье и одежде",
+                "description": "Складки могут вызывать у лежачего пациента пролежни",
+                "link": "https://drive.google.com/open?id=1jkzXqLaBdi5iq2efcANlw3H0_JwGZI0e"
+            },
         },
         "dailyPlan": {
             "0": {
