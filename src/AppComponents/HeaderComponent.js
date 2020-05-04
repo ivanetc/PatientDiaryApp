@@ -13,7 +13,7 @@ function Header() {
             <img src={logo} alt="Логотип"/>
             <div className="App-name"> Дневник пациента </div>
             <div className="App-navi">
-                <Link className="App-navi-item" to='/'>Профиль </Link>
+                <Link className="App-navi-item" to='/profile'>Профиль </Link>
                 <Link className="App-navi-item" to='/daily_plan'>Дневной план </Link>
                 <Link className="App-navi-item" to='/recommendations'>Рекомендации</Link>
                 <Link className="App-navi-item" to='/calendar'>Календарь</Link>
@@ -24,9 +24,11 @@ function Header() {
                 <a> Добрый день, {user.firstName} {user.lastName} </a>
             </div>
             <div className="App-header-exit-button">
+              <Link to='/'>
                 <Button size="small" variant="contained" color="secondary">
                     Выход
                 </Button>
+              </Link>
             </div>
         </header>
     );
