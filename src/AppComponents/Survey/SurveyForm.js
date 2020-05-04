@@ -2,6 +2,7 @@ import React from "react";
 import Question from "./Question";
 import Button from "@material-ui/core/Button";
 import Data from "../../DataClasses/Data"
+import Paper from "@material-ui/core/Paper";
 
 class SurveyForm extends React.Component {
   constructor(props) {
@@ -47,12 +48,14 @@ class SurveyForm extends React.Component {
       key => <Question handler={this.handleChange} question={this.props.questions[key]} id={key}/>
     );
     return (
-      <form onSubmit={this.handleSubmit}>
-        {questions}
-        <Button type={'submit'}>
-          Отправить
-        </Button>
-      </form>
+      <Paper className={'all_surveys'}>
+        <form onSubmit={this.handleSubmit}>
+          {questions}
+          <Button type={'submit'}>
+            Отправить
+          </Button>
+        </form>
+      </Paper>
     );
   }
 }

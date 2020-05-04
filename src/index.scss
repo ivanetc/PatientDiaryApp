@@ -325,3 +325,30 @@ $secondaryColor2: #FF5830;
 
 .calendar_charts_field{}
 .line_charts_field{}
+
+/*ОПРОС*/
+
+.all_surveys {
+  border: 1px solid darkgray;
+  margin: 50px;
+  padding: 10px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .MuiFormGroup-root {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    .MuiFormControl-root {
+      width: 100%;
+    }
+
+    .MuiButton-root {
+      background-color: #FF5830;
+    }
+  }
+}

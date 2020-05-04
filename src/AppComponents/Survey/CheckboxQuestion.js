@@ -10,6 +10,7 @@ const CheckboxQuestion = props => {
     key => <FormControlLabel
       control={<Checkbox name={props.id} onChange={props.handler} value={props.answers[key].text}/>}
       label={props.answers[key].text}
+      // labelPlacement='bottom'
     />
     );
 
