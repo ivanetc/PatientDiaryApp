@@ -2,7 +2,6 @@ import React from "react";
 import Question from "./Question";
 import Button from "@material-ui/core/Button";
 import Data from "../../DataClasses/Data"
-import Paper from "@material-ui/core/Paper";
 
 class SurveyForm extends React.Component {
   constructor(props) {
