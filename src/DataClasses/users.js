@@ -1,9 +1,18 @@
 const Users = {
     "0": {
-        "firstName": "Иван",
-        "lastName": "Иванов",
-        "email": "ivan@mail.com",
-        "login": "ivan",
+        "firstName": "Александр",
+        "lastName": "Иванец",
+        "email": "ivanetsas@yandex.ru",
+        "login": "ivanetc",
+        "password": "psd",
+        "careId": "0",
+        "surveyResults": []
+    },
+    "1": {
+        "firstName": "Дарья",
+        "lastName": "Соколова",
+        "email": "sokolova@yandex.ru",
+        "login": "sokolova",
         "password": "psd",
         "careId": "0",
         "surveyResults": []

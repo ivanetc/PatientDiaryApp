@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb2b9e80-f61c-4312-80ad-deae8f07f63d" name="Default Changelist" comment="Класс данных и метод для опросов">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppComponents/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppComponents/HeaderComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataClasses/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataClasses/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +19,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="IvanetsAS &lt;ivanetc.aleksandr@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="ivanetc" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -106,6 +108,7 @@
       <workItem from="1588509080531" duration="297000" />
       <workItem from="1588523637269" duration="5460000" />
       <workItem from="1588529470609" duration="414000" />
+      <workItem from="1588572600263" duration="3148000" />
     </task>
     <task id="LOCAL-00001" summary="Класс данных и метод для опросов">
       <created>1588503727978</created>
@@ -135,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588516541985</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Рекомендации&#10;Плюс что-то из формы прилетело">
+      <created>1588575586159</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588575586159</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +169,8 @@
     <MESSAGE value="Заготовки методов" />
     <MESSAGE value="Получение профиля пользователя" />
     <MESSAGE value="Метод для списка уходов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Метод для списка уходов" />
+    <MESSAGE value="Рекомендации&#10;Плюс что-то из формы прилетело" />
+    <option name="LAST_COMMIT_MESSAGE" value="Рекомендации&#10;Плюс что-то из формы прилетело" />
   </component>
   <component name="WindowStateProjectService">
     <state x="141" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588524245014">
@@ -170,6 +181,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="466" y="107" width="424" height="587" key="#com.intellij.ide.macro.MacrosDialog/0.30.1366.738@0.30.1366.738" timestamp="1588524151852" />
+    <state x="292" y="30" width="771" height="738" key="CommitChangelistDialog2" timestamp="1588575584987">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="292" y="30" width="771" height="738" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1588575584987" />
     <state x="117" y="244" width="747" height="457" key="EditFileWatcherDialog" timestamp="1588522806856">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -198,6 +213,22 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="1320" height="175" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1588524336724" />
+    <state x="127" y="91" width="1092" height="623" key="MergeDialog" timestamp="1588575802515">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="127" y="91" width="1092" height="623" key="MergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1588575802515" />
+    <state x="388" y="108" width="580" height="585" key="MultipleFileMergeDialog" timestamp="1588575802540">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="388" y="108" width="580" height="585" key="MultipleFileMergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1588575802540" />
+    <state x="278" y="131" width="800" height="539" key="Vcs.Push.Dialog.v2" timestamp="1588575824103">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="278" y="131" width="800" height="539" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1588575824103" />
+    <state x="402" y="175" width="552" height="451" key="git4idea.merge.GitPullDialog" timestamp="1588575731320">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="402" y="175" width="552" height="451" key="git4idea.merge.GitPullDialog/0.30.1366.738@0.30.1366.738" timestamp="1588575731320" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1588526656929">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
