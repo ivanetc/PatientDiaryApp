@@ -12,10 +12,10 @@ import makeStyles from "@material-ui/core/styles/makeStyles";
 import {keys} from "@material-ui/core/styles/createBreakpoints";
 import Paper from "@material-ui/core/Paper";
 
-const ProfilAll = ({firstName, lastName, email, careId, careList}) => {
+const ProfilAll = ({userId, firstName, lastName, email, careId, careList}) => {
 
   const handleChange = (event) => {
-    Data.Data.setCare(event.target.value, careId);
+    Data.Data.setCare(userId, event.target.value);
   };
 
   let MenuItems = Object.keys(careList).map(key =>
@@ -59,13 +59,15 @@ const ProfilAll = ({firstName, lastName, email, careId, careList}) => {
 }
 
 function ProfilPageComponent() {
-  let user = Data.Data.getUserProfile(0);
+    let userId=0;
+  let user = Data.Data.getUserProfile(userId);//надопонять откуда берётся юзер айди и как
   let careList = Data.Data.getCareList();
   let html =
     <div>
       <Paper className="all_profile_content">
         <div className="profile_header">Профиль</div>
         <ProfilAll
+            userId={userId}
           firstName={user.firstName}
           lastName={user.lastName}
           careId={user.careId}

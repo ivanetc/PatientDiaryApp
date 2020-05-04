@@ -367,25 +367,59 @@ $secondaryColor2: #FF5830;
 
 /*КАЛЕНДАРЬ СТАТИСТИКА ГРАФИКИ*/
 .all_charts{
+  background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid darkgray;
   margin: 50px;
   padding-left: 25px;
   display: flex;
   flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .survey_description{
   margin-bottom: 20px;
 }
+
 .title_charts{
+  margin-top: 1%;
   font-size: large;
   text-transform: uppercase;
-  margin: 10px 0;
   text-align: -webkit-center;
 }
 
-.calendar_charts_field{}
-.line_charts_field{}
+.title_calendar{
+  margin-top: 4%;
+  margin-left: 5%;
+  font-color: grey!important;
+  font-family: $fontFamily;
+  font-weight: normal;
+  font-size: 24px;
+  align-self: flex-start;
+}
+
+.title_line{
+  margin-top: 4%;
+  margin-left: 5%;
+  font-color: grey!important;
+  font-family: $fontFamily;
+  font-weight: normal;
+  font-size: 24px;
+  align-self: flex-start;
+}
+
+.calendar_charts_field{
+  width: 100%;
+  align-self: center;
+}
+
+.line_charts_field{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  align-self: center;
+}
 
 /*ОПРОС*/
 
@@ -430,3 +464,20 @@ $secondaryColor2: #FF5830;
   }
 }
 
+.survey_result_description{
+  margin: 15px;
+}
+
+/*ПЛАН ДНЯ*/
+.all_daily_plan {
+  display: flex;
+  flex-direction: column;
+}
+
+/*АВТОРИЗАЦИЯ*/
+.authorization {
+  background-color: #00925F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

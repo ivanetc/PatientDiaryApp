@@ -21,6 +21,8 @@ const Data = {
             "surveyResult": data,
             "date": "Здесь дата, но мне лень"
         });
+
+        alert(this.survey[surveyId].aggregate(data));
         return this.survey[surveyId].aggregate(data)
     },
 
@@ -41,9 +43,7 @@ const Data = {
     },
 
     setCare(userId, careId) {
-        console.log('было', this.users[userId].careId);
         this.users[userId].careId = careId;
-        setTimeout(console.log.bind(this, 'стало', this.users[userId].careId), 500);
     },
 
     getRecommendations(userId) {
