@@ -46,22 +46,22 @@ function Header() {
             <Link className="App-navi-item" to='/daily_plan'>Дневной план </Link>
             <Link className="App-navi-item" to='/recommendations'>Рекомендации</Link>
             <Link className="App-navi-item" to='/calendar'>Календарь</Link>
-            <Link className="App-navi-item" to='/fill_survey'>Сообщения</Link>
-            <Link className="App-navi-item" to='/fill_survey'>Справка</Link>
           </div>
-          <div className="App-header-right-part">
-            <a> Добрый день, {user.firstName} {user.lastName} </a>
-          </div>
-          <div className="App-header-exit-button">
-            <Link to='/'>
-              <Button size="small" variant="contained" color="secondary">
-                Выход
-              </Button>
-            </Link>
+          <div className='header_login'>
+            <div className="App-header-right-part">
+              <a> Добрый день, {user.firstName} {user.lastName} </a>
+            </div>
+            <div className="App-header-exit-button">
+              <Link to='/'>
+                <Button size="small" variant="contained" color="secondary">
+                  Выход
+                </Button>
+              </Link>
+            </div>
           </div>
         </nav>
         )}
-      <button onClick={toggleNav} className='burger'>+++</button>
+      <div onClick={toggleNav} className='burger'/>
     </header>
   );
 }
