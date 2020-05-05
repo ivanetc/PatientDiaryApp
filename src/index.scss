@@ -62,6 +62,11 @@ $secondaryColor2: #FF5830;
     max-height: 70px;
     margin-left: 5px;
   }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .App-name {
@@ -132,15 +137,36 @@ $secondaryColor2: #FF5830;
   }
 }
 
+.burger {
+  display: none;
+}
+
+.header_logo {
+  display: flex;
+  align-items: center;
+}
+
 /*Responsive Header*/
 @media (max-width: 700px) {
   .App-header {
-    flex-direction: column;
-    height: 70%;
+    justify-content: space-between;
+    nav {
+      background-color: $primaryColor;
+      flex-direction: column;
+      height: 500px;
+      width: 100%;
+      margin-top: 42%;
+      position: absolute;
+      z-index: 9999;
+    }
   }
 
   .App-navi {
     flex-direction: column;
+  }
+
+  .burger {
+    display: block;
   }
 }
 
