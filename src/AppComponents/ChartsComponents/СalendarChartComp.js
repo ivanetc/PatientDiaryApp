@@ -4,7 +4,7 @@ import React from "react";
 const СalendarChartComp = ({fish}) => {
     return (
         <Chart
-            //width="1000px"
+            width="1000px"
             title="Календарь ухода"
             chartType="Calendar" //неизменяемая хрень
             loader={<div>Loading Chart</div>} //
@@ -47,7 +47,7 @@ const СalendarChartComp = ({fish}) => {
                         strokeWidth: 2
                     },
                     daysOfWeek: 'ПВСЧПСС',
-                    dayOfWeekRightSpace: 10,
+                    dayOfWeekRightSpace: 12,
                 },
                 colorAxis:{
                     minValue: 0,  colors: ['#f8b4a2', '#008453'],

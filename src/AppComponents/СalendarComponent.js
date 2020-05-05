@@ -20,6 +20,12 @@ function CalendarComponent() {
                 <div className="calendar_charts_field">
                     <СalendarChartComp fish={fishCal}/>
                 </div>
+                <div className="all_cube_field">
+                    <div className="firstcube"><div className="cube_field"></div><div className="name_cube_field">День пропущен</div></div>
+                    <div className="secondcube"><div className="cube_field"></div><div className="name_cube_field">План на день не заполнялся</div></div>
+                    <div className="thirdcube"><div className="cube_field"></div><div className="name_cube_field">План на день заполнен не полностью</div></div>
+                    <div className="fourthcube"><div className="cube_field"></div><div className="name_cube_field">План на день заполнен полностью</div></div>
+                </div>
                 <div className="title_line">Статистика состояния</div>
                 <div className="line_charts_field"><LineChartComp fish={fishLine} /></div>
             </Paper>
