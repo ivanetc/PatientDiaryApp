@@ -17,7 +17,7 @@ import Authorization from "./AppComponents/Authorization";
 
 Data.Data.init();
 
-const Router = ReactRouterDOM.BrowserRouter;
+const Router = ReactRouterDOM.Router;
 const Route = ReactRouterDOM.Route;
 const Switch = ReactRouterDOM.Switch;
 

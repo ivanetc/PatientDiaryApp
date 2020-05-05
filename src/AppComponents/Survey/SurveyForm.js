@@ -2,10 +2,8 @@ import React from "react";
 import Question from "./Question";
 import Button from "@material-ui/core/Button";
 import Data from "../../DataClasses/Data"
-import Paper from "@material-ui/core/Paper";
 import history from '../../history';
-import {withRouter} from "react-router-dom"
-
+import {withRouter} from "react-router-dom";
 class SurveyForm extends React.Component {
   constructor(props) {
     super(props);
@@ -44,7 +42,8 @@ class SurveyForm extends React.Component {
     let result = Data.Data.addSurveyResult(this.props.userId, this.props.surveyId, this.state.value);
     console.log(result);
     history.push('/daily_plan/result_survey' + this.props.surveyId + '/'+result, this.state);
-    history.go();
+    // history.go();
+    // this.render(<SurveyResultComponent/>)
   }
 
   render() {

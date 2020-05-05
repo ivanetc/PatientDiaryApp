@@ -14,7 +14,7 @@ body {
   //font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   //  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   //  sans-serif;
-  font-family: $fontFamily;
+  font-family: $fontFamily, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
@@ -23,7 +23,7 @@ body {
   background-size: 80%;
   background-position: top;
   background-repeat: no-repeat;
-  background-color: white;
+  background-color: #ededed;
 }
 
 #root {
@@ -148,6 +148,13 @@ $secondaryColor2: #FF5830;
 // for button
 .MuiButton-containedSecondary{
   background-color: $secondaryColor2 !important;
+  color: white !important;
+}
+.MuiButton-contained.Mui-disabled{
+  color: white!important;
+}
+.MuiButton-containedPrimary{
+  background-color: #b3b3b3 !important;
 }
 .MuiButton-containedSizeSmall{
   padding: 2px 7px !important;

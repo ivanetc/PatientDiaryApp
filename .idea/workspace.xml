@@ -22,8 +22,12 @@
     <list default="true" id="eb2b9e80-f61c-4312-80ad-deae8f07f63d" name="Default Changelist" comment="подключил недоступность опросов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppComponents/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppComponents/HeaderComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppComponents/DailyPlan/DailySurveyItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppComponents/DailyPlan/DailySurveyItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppComponents/DailyPlanComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppComponents/DailyPlanComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppComponents/Survey/SurveyForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppComponents/Survey/SurveyForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataClasses/Data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataClasses/Data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/Images/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/Images/background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -262,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588632171772</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="header">
+      <created>1588635083686</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1588635083686</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +310,8 @@
     <MESSAGE value="Не сбрасывающиеся checkbox-ы" />
     <MESSAGE value="xnj" />
     <MESSAGE value="подключил недоступность опросов" />
-    <option name="LAST_COMMIT_MESSAGE" value="подключил недоступность опросов" />
+    <MESSAGE value="header" />
+    <option name="LAST_COMMIT_MESSAGE" value="header" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1588577306792">
@@ -326,10 +338,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="392" y="54" key="#start/0.0.1366.738@0.0.1366.738" timestamp="1588531138314" />
-    <state x="292" y="30" width="771" height="738" key="CommitChangelistDialog2" timestamp="1588635062663">
+    <state x="292" y="30" width="771" height="738" key="CommitChangelistDialog2" timestamp="1588635083065">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="292" y="30" width="771" height="738" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1588635062663" />
+    <state x="292" y="30" width="771" height="738" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1588635083065" />
     <state x="117" y="244" width="747" height="457" key="EditFileWatcherDialog" timestamp="1588522806856">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -386,10 +398,10 @@
     </state>
     <state x="463" y="81" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.738@0.0.1366.738" timestamp="1588531860973" />
     <state x="463" y="31" width="465" height="737" key="git4idea.branch.GitSmartOperationDialog/0.30.1366.738@0.30.1366.738" timestamp="1588618984714" />
-    <state x="402" y="175" width="562" height="451" key="git4idea.merge.GitPullDialog" timestamp="1588632180803">
+    <state x="402" y="175" width="562" height="451" key="git4idea.merge.GitPullDialog" timestamp="1588635091071">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="402" y="175" width="562" height="451" key="git4idea.merge.GitPullDialog/0.30.1366.738@0.30.1366.738" timestamp="1588632180803" />
+    <state x="402" y="175" width="562" height="451" key="git4idea.merge.GitPullDialog/0.30.1366.738@0.30.1366.738" timestamp="1588635091071" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1588617558278">
       <screen x="0" y="30" width="1366" height="738" />
     </state>

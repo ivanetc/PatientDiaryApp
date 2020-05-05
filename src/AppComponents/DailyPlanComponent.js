@@ -11,7 +11,9 @@ function DailyPlanComponent() {
     };
     let userId = 0;
     let user = Data.Data.getUserProfile(userId);
-    // let careId = user.careId;
+
+    console.log("USER");
+    console.log(user);
 
     let fullDailyPlan = Data.Data.getDailyPlan(userId);
     let {dailyPlan, dailySurveys} = parseFullDailyPlan(fullDailyPlan);
