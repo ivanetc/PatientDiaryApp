@@ -57,6 +57,13 @@ $secondaryColor2: #FF5830;
     max-height: 70px;
     margin-left: 5px;
   }
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .App-name {
@@ -133,15 +140,51 @@ $secondaryColor2: #FF5830;
   }
 }
 
+.burger {
+  background-image: url("./Resources/Images/burger.png");
+  background-size: cover;
+  display: none;
+  height: 30px;
+  width: 30px;
+}
+
+.header_logo {
+  display: flex;
+  align-items: center;
+}
+
+.header_login {
+  display: flex;
+  align-items: center;
+}
+
 /*Responsive Header*/
 @media (max-width: 700px) {
   .App-header {
-    flex-direction: column;
-    height: 70%;
+    justify-content: space-between;
+    nav {
+      background-color: $primaryColor;
+      flex-direction: column;
+      height: 500px;
+      width: 100%;
+      margin-top: 42%;
+      position: absolute;
+      z-index: 9999;
+    }
   }
 
   .App-navi {
     flex-direction: column;
+  }
+
+  .burger {
+    display: block;
+    margin-right: 30px;
+  }
+
+  .header_login {
+    flex-direction: column;
+    margin-bottom: 30%;
   }
 }
 
