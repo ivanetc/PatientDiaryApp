@@ -12,7 +12,7 @@ function Header() {
   const [isSmallScreen, setIsSmallScreen] = React.useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 700px)");
+    const mediaQuery = window.matchMedia("(max-width: 900px)");
     mediaQuery.addListener(handleMediaQueryChange);
     handleMediaQueryChange(mediaQuery);
 
