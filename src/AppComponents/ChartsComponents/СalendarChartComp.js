@@ -47,7 +47,7 @@ const СalendarChartComp = ({fish}) => {
                         strokeWidth: 2
                     },
                     daysOfWeek: 'ПВСЧПСС',
-                    dayOfWeekRightSpace: 10,
+                    dayOfWeekRightSpace: 12,
                 },
                 colorAxis:{
                     minValue: 0,  colors: ['#f8b4a2', '#008453'],
