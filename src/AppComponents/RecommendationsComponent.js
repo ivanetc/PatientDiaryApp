@@ -65,14 +65,14 @@ function RecommendationsComponent() {
                 container
                 spacing={3}
             >
-                <Grid style={section} item xs={3}>
+                <Grid style={section} item xs={6}>
                     <div className="RecommendationItem GreenContainer">
                         <h2>Полезные ресурсы</h2>
                         {linksComponents}
                     </div>
                 </Grid>
                 {recommendationComponents}
-                <Grid style={section} item xs={3}>
+                <Grid style={section} item xs={6}>
                     <div className="RecommendationItem RedContainer">
                         <h2>Важные телефоны</h2>
                         {contactComponents}
