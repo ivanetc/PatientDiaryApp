@@ -71,7 +71,7 @@ function ProfilPageComponent() {
           firstName={user.firstName}
           lastName={user.lastName}
           careId={user.careId}
-          email={user.login}
+          email={user.email}
           careList={careList}
         />
       </Paper>

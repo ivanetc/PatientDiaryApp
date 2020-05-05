@@ -55,34 +55,32 @@ function RecommendationsComponent() {
     );
 
     return (
-        <div className="app_body" style={body}>
-            <div className="ComponentBody">
-                <h1>{user.care}. Рекомендации.</h1>
-                <Grid
-                    className="RecommendationContainer"
-                    alignItems="stretch"
-                    direction="row"
-                    justify="center"
-                    container
-                    spacing={3}
-                >
-                    <Grid style={section} item xs={3}>
-                        <div className="RecommendationItem GreenContainer">
-                            <h2>Полезные ресурсы</h2>
-                            {linksComponents}
-                        </div>
-                    </Grid>
-                    {recommendationComponents}
-                    <Grid style={section} item xs={3}>
-                        <div className="RecommendationItem RedContainer">
-                            <h2>Важные телефоны</h2>
-                            {contactComponents}
-                        </div>
-                    </Grid>
-                    {articleComponents}
+        <Paper className="all_profile_content recommendation_body">
+            <div className="profile_header">{user.care}. Рекомендации.</div>
+            <Grid
+                className="RecommendationContainer"
+                alignItems="stretch"
+                direction="row"
+                justify="center"
+                container
+                spacing={3}
+            >
+                <Grid style={section} item xs={3}>
+                    <div className="RecommendationItem GreenContainer">
+                        <h2>Полезные ресурсы</h2>
+                        {linksComponents}
+                    </div>
                 </Grid>
-            </div>
-        </div>
+                {recommendationComponents}
+                <Grid style={section} item xs={3}>
+                    <div className="RecommendationItem RedContainer">
+                        <h2>Важные телефоны</h2>
+                        {contactComponents}
+                    </div>
+                </Grid>
+                {articleComponents}
+            </Grid>
+        </Paper>
     );
 }
 
